@@ -4,9 +4,9 @@ import BookItem from "./BookItem";
 
 const BookList = props => {
   return (
-    <div>
+    <div className="book-list">
       {props.books.map(book => {
-        return <BookItem book={book} />;
+        return <BookItem key={book.id} book={book} />;
       })}
     </div>
   );
