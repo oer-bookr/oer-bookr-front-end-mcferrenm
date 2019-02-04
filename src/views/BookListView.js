@@ -1,7 +1,21 @@
 import React from "react";
+import { connect } from "react-redux";
+
+import BookList from "../components/BookList";
 
 const BookListView = props => {
-  return <div>BookListView</div>;
+  return (
+    <div>
+      <BookList books={props.books} />
+    </div>
+  );
 };
 
-export default BookListView;
+const mapStateToProps = state => ({
+  books: state.booksReducer.books
+});
+
+export default connect(
+  mapStateToProps,
+  {}
+)(BookListView);
