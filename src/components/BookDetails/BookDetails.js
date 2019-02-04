@@ -13,9 +13,9 @@ const BookDetails = props => {
       <p>{license}</p>
       <img src={image} alt={title} />
       <h2>Reviews:</h2>
-      <h4>{reviews.reviewer}</h4>
+      {/* <h4>{reviews.reviewer}</h4>
       <p>{reviews.rating}</p>
-      <p>{reviews.review}</p>
+      <p>{reviews.review}</p> */}
     </div>
   );
 };
