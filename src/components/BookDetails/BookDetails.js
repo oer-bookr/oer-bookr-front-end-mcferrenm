@@ -12,6 +12,7 @@ const BookDetails = props => {
       <p>{publisher}</p>
       <p>{license}</p>
       <img src={image} alt={title} />
+      <h2>Reviews:</h2>
       <h4>{reviews.reviewer}</h4>
       <p>{reviews.rating}</p>
       <p>{reviews.review}</p>

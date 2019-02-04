@@ -1,12 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import SubNav from "../components/SubNav";
 import BookList from "../components/BookList/BookList";
 
 const BookListView = props => {
   return (
     <div>
-      <BookList books={props.books} />
+      <SubNav />
+      <BookList {...props} />
     </div>
   );
 };
