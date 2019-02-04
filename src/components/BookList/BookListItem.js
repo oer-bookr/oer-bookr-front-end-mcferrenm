@@ -1,19 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Book = ({
-  book: { title, author, publisher, license, image, reviews }
-}) => {
+const Book = ({ book: { title, author, image, id } }) => {
   return (
-    <div className="book-list-item-wrapper">
-      <h2>{title}</h2>
-      <h3>{author}</h3>
-      <p>{publisher}</p>
-      <p>{license}</p>
-      <img src={image} alt={title} />
-      <h4>{reviews.reviewer}</h4>
-      <p>{reviews.rating}</p>
-      <p>{reviews.review}</p>
-    </div>
+    <Link to={`/book/${id}`}>
+      <div className="book-list-item-wrapper">
+        <img src={image} alt={title} />
+        <h2>{title}</h2>
+        <h3>{author}</h3>
+      </div>
+    </Link>
   );
 };
 

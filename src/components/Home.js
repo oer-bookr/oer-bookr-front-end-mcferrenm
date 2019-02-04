@@ -1,9 +1,14 @@
 import React from "react";
 
-const Home = () => {
+const Home = props => {
+  console.log(props);
+  const handleNavToBooks = e => {
+    e.preventDefault();
+    props.history.push("/books");
+  };
   return (
     <div className="home-wrapper">
-      <button>Get OER Books!</button>
+      <button onClick={handleNavToBooks}>Get OER Books!</button>
     </div>
   );
 };
