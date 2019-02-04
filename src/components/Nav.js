@@ -6,7 +6,7 @@ const Nav = () => {
     <nav className="nav-bar">
       <h1>OER Bookr</h1>
       <div className="nav-links">
-        <NavLink to="/books">Books</NavLink>
+        <NavLink to="/books/all">Books</NavLink>
         <NavLink exact to="/">
           Home
         </NavLink>

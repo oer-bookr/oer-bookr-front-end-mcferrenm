@@ -11,6 +11,7 @@ const SubNav = () => {
         <NavLink to="/books/drama">Drama</NavLink>
         <NavLink to="/books/romance">Romance</NavLink>
         <NavLink to="/books/action">Action</NavLink>
+        <NavLink to="/books/all">All</NavLink>
       </div>
     </nav>
   );

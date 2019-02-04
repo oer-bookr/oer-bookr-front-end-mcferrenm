@@ -4,7 +4,7 @@ const Home = props => {
   console.log(props);
   const handleNavToBooks = e => {
     e.preventDefault();
-    props.history.push("/books");
+    props.history.push("/books/all");
   };
   return (
     <div className="home-wrapper">

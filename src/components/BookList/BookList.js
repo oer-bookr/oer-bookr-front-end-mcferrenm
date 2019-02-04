@@ -5,9 +5,13 @@ import BookListItem from "./BookListItem";
 const BookList = props => {
   const subject = props.match.params.subject;
 
-  const filteredBooks = props.books.filter(book =>
-    book.subject.toLowerCase().includes(subject)
-  );
+  const filteredBooks = props.books.filter(book => {
+    if (subject === "all") {
+      return book;
+    }
+    return book.subject.toLowerCase().includes(subject);
+  });
+
   return (
     <div className="book-list-wrapper">
       {filteredBooks.map(book => {

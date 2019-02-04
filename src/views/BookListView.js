@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import SubNav from "../components/SubNav";
+import SubNav from "../components/BookList/SubNav";
 import BookList from "../components/BookList/BookList";
 
 const BookListView = props => {

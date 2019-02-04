@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 
-import { HomeView, BookListView, BookDetailsView } from "./views";
+import { LoginView, HomeView, BookListView, BookDetailsView } from "./views";
 import Nav from "./components/Nav";
 
 import "./App.css";
@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
+        <Route exact path="/login" component={LoginView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
         <Route path="/book/:id" component={BookDetailsView} />
