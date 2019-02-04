@@ -1,14 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import BookList from "../components/BookList/BookList";
+import BookDetails from "../components/BookDetails/BookDetails";
 
-const BookListView = props => {
-  return (
-    <div>
-      <BookList books={props.books} />
-    </div>
-  );
+const BookDetailsView = props => {
+  console.log(props);
+  return <BookDetails {...props} />;
 };
 
 const mapStateToProps = state => ({
@@ -18,4 +15,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   {}
-)(BookListView);
+)(BookDetailsView);

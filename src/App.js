@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink } from "react-router-dom";
 
-import { HomeView, BookListView } from "./views";
+import { HomeView, BookListView, BookDetailsView } from "./views";
 import "./App.css";
 
 class App extends Component {
@@ -19,7 +19,8 @@ class App extends Component {
           </div>
         </nav>
         <Route exact path="/" component={HomeView} />
-        <Route path="/books" component={BookListView} />
+        <Route exact path="/books" component={BookListView} />
+        <Route path="/book/:id" component={BookDetailsView} />
       </div>
     );
   }

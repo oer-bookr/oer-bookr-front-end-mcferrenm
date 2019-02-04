@@ -1,12 +1,12 @@
 import React from "react";
 
-import BookItem from "./BookItem";
+import BookListItem from "./BookListItem";
 
 const BookList = props => {
   return (
-    <div className="book-list">
+    <div className="book-list-wrapper">
       {props.books.map(book => {
-        return <BookItem key={book.id} book={book} />;
+        return <BookListItem key={book.id} book={book} />;
       })}
     </div>
   );
