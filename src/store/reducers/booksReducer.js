@@ -1,5 +1,7 @@
+import { bookData } from "../../MOCK_DATA";
+
 const initialState = {
-  books: []
+  books: bookData
 };
 
 export const booksReducer = (state = initialState, action) => {

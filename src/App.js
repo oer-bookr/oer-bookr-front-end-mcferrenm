@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+
+import { BookListView } from "./views";
 import "./App.css";
 
 class App extends Component {
   render() {
-    return <div className="App">app</div>;
+    return <BookListView />;
   }
 }
 
