@@ -1,7 +1,20 @@
 import React from "react";
 
 const Login = () => {
-  return <div className="login">Login</div>;
+  return (
+    <div className="login">
+      <h1>Login</h1>
+      <form>
+        <input type="text" name="username" placeholder="Enter username..." />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password..."
+        />
+        <button>Enter</button>
+      </form>
+    </div>
+  );
 };
 
 export default Login;
