@@ -17,7 +17,7 @@ class BookListView extends Component {
         {this.props.isLoadingBooks && (
           <Loader type="Grid" color="#somecolor" height={80} width={80} />
         )}
-        <BookList {...this.props} />
+        <BookList {...this.props} searchInput={this.props.searchInput} />
       </div>
     );
   }
@@ -25,7 +25,8 @@ class BookListView extends Component {
 
 const mapStateToProps = state => ({
   books: state.booksReducer.books,
-  isLoadingBooks: state.booksReducer.isLoadingBooks
+  isLoadingBooks: state.booksReducer.isLoadingBooks,
+  searchInput: state.searchReducer.searchInput
 });
 
 export default connect(

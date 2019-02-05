@@ -3,13 +3,15 @@ import React from "react";
 import BookListItem from "./BookListItem";
 
 const BookList = props => {
-  const subject = props.match.params.subject;
+  // const subject = props.match.params.subject;
 
   const filteredBooks = props.books.filter(book => {
-    if (subject === "all") {
-      return book;
-    }
-    return book.subject.toLowerCase().includes(subject);
+    // if (subject === "all") {
+    //   return book;
+    // }
+    return book.title.includes(props.searchInput);
+
+    // return book.subject.toLowerCase().includes(subject);
   });
 
   return (

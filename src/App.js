@@ -6,10 +6,11 @@ import {
   HomeView,
   BookListView,
   BookDetailsView,
-  ReviewFormView
+  ReviewFormView,
+  JumboSearchView
 } from "./views";
+
 import Nav from "./components/Nav";
-import SearchJumbo from "./components/JumboSearch";
 
 import "./App.css";
 
@@ -18,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <Route path="/books/:subject" component={SearchJumbo} />
+        <Route path="/books/:subject" component={JumboSearchView} />
         <Route exact path="/login" component={LoginView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
