@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import BookDetails from "../components/BookDetails/BookDetails";
 
 const BookDetailsView = props => {
-  console.log(props);
   return <BookDetails {...props} />;
 };
 
