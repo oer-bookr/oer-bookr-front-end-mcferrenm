@@ -1,17 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const SubNav = () => {
   return (
     <nav className="sub-nav-bar">
-      <h4>Subjects:</h4>
+      <div className="left-nav" />
       <div className="sub-nav-links">
-        <NavLink to="/books/horror">Horror</NavLink>
-        <NavLink to="/books/comedy">Comedy</NavLink>
-        <NavLink to="/books/drama">Drama</NavLink>
-        <NavLink to="/books/romance">Romance</NavLink>
-        <NavLink to="/books/action">Action</NavLink>
+        <h4>Subjects:</h4>
+        <NavLink to="/books/math">Math</NavLink>
+        <NavLink to="/books/history">History</NavLink>
+        <NavLink to="/books/english">English</NavLink>
+        <NavLink to="/books/science">Science</NavLink>
         <NavLink to="/books/all">All</NavLink>
+      </div>
+      <div className="right-nav">
+        <Link to="/addbook">
+          <button>Add a Book</button>
+        </Link>
       </div>
     </nav>
   );

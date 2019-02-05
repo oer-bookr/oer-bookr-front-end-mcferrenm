@@ -6,7 +6,7 @@ const ReviewForm = props => {
   return (
     <div className="review-form">
       <div className="review-form-header">
-        <h1>Addding review to:</h1>
+        <h1>Adding review to:</h1>
         <h2>{title}</h2>
         <h3>{author}</h3>
         <img src={image} alt={title} />
