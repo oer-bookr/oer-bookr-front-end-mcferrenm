@@ -12,7 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <SearchJumbo />
+        <Route path="/books/:subject" component={SearchJumbo} />
+        {/* <SearchJumbo /> */}
         <Route exact path="/login" component={LoginView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
