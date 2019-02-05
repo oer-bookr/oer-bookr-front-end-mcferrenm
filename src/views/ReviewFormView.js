@@ -1,11 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import BookDetails from "../components/BookDetails/BookDetails";
+import ReviewForm from "../components/ReviewForm/ReviewForm";
 
-const BookDetailsView = props => {
-  console.log(props);
-  return <BookDetails {...props} />;
+const ReviewFormView = props => {
+  return <ReviewForm {...props} books={props.books} />;
 };
 
 const mapStateToProps = state => ({
@@ -16,4 +15,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   {}
-)(BookDetailsView);
+)(ReviewFormView);

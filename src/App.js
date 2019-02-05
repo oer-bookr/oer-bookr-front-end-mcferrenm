@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 
-import { LoginView, HomeView, BookListView, BookDetailsView } from "./views";
+import {
+  LoginView,
+  HomeView,
+  BookListView,
+  BookDetailsView,
+  ReviewFormView
+} from "./views";
 import Nav from "./components/Nav";
 import SearchJumbo from "./components/JumboSearch";
 
@@ -13,11 +19,11 @@ class App extends Component {
       <div className="App">
         <Nav />
         <Route path="/books/:subject" component={SearchJumbo} />
-        {/* <SearchJumbo /> */}
         <Route exact path="/login" component={LoginView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
-        <Route path="/book/:id" component={BookDetailsView} />
+        <Route exact path="/book/:id" component={BookDetailsView} />
+        <Route path="/book/:id/addreview" component={ReviewFormView} />
       </div>
     );
   }
