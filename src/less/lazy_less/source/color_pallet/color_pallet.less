@@ -1,0 +1,96 @@
+@lighten-percentage-distance: 15%;
+@darken-percentage-distance: 15%;
+@saturation-percentage: 20%;
+@desaturate-percentage: 20%;
+
+.colors(@color){
+    
+    @greaterThan90: boolean(saturation(@color) > (100% - @saturation-percentage));
+    @baseColor: if(@greaterThan90, desaturate(@color, @saturation-percentage), @color);
+    @lessThanSaturation: boolean(saturation(@color) < @desaturate-percentage);
+    @baseColor: if(@lessThanSaturation, saturate(@color, @desaturate-percentage), @color);
+    
+    .base-colors(@color){
+        @color1: lighten(@color, (@lighten-percentage-distance * 2));
+        @color2: lighten(@color, @lighten-percentage-distance);
+        @color3: @color;
+        @color4: darken(@color, @darken-percentage-distance);
+        @color5: darken(@color, (@darken-percentage-distance * 2));
+        
+        .saturate(){
+            @saturate1: saturate(@color1, @saturation-percentage);
+            @saturate2: saturate(@color2, @saturation-percentage);
+            @saturate3: saturate(@color3, @saturation-percentage);
+            @saturate4: saturate(@color4, @saturation-percentage);
+            @saturate5: saturate(@color5, @saturation-percentage);
+        }
+        
+        .saturate();
+        
+        .desaturate(){
+            @desaturate1: desaturate(@color1, @desaturate-percentage);
+            @desaturate2: desaturate(@color2, @desaturate-percentage);
+            @desaturate3: desaturate(@color3, @desaturate-percentage);
+            @desaturate4: desaturate(@color4, @desaturate-percentage);
+            @desaturate5: desaturate(@color5, @desaturate-percentage);
+        }
+        
+        .desaturate();
+    }
+    
+    .base-colors(@baseColor);
+    
+}
+
+#primaryColors{
+    .colors(@color);
+}
+
+#complementaryColors{
+    .colors(spin(@color, 180deg));
+}
+
+#adjacentColors{
+    .leftAdjacent{
+        .colors(spin(@color, -30deg))
+    }
+    
+    .rightAdjacent{
+        .colors(spin(@color, 30deg));
+    }
+}
+
+#triadColors{
+    .leftTriad{
+        .colors (spin(@color, 165deg));
+    }
+    
+    .rightTriad{
+        .colors(spin(@color, 195deg))
+    }
+}
+
+#tetradColors{
+    .leftTetrad{
+        .colors(spin(@color, -30deg));
+    }
+    
+    .leftTetradComplementary{
+        .colors(spin(@color, 150deg));
+    }
+}
+@grey1: lighten(@grey5, 45%);
+@grey2: lighten(@grey5, 35%);
+@grey3: lighten(@grey5, 25%);
+@grey4: lighten(@grey5, 15%);
+@grey5: grey;
+@grey6: darken(@grey5, 15%);
+@grey7: darken(@grey5, 25%);
+
+@grey1Saturate: saturate(@grey1, 10%);
+@grey2Saturate: saturate(@grey2, 10%);
+@grey3Saturate: saturate(@grey3, 10%);
+@grey4Saturate: saturate(@grey4, 10%);
+@grey5Saturate: saturate(@grey5, 10%);
+@grey6Saturate: saturate(@grey6, 10%);
+@grey7Saturate: saturate(@grey7, 10%);

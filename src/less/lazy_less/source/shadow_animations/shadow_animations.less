@@ -1,0 +1,55 @@
+.aesthetic-shadow-inset-center (@color: black, @blur: 32px, @width: 9px,
+  @opacity: .5, @x-offset: 0, @y-offset: 0) {
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity);
+}
+
+.aesthetic-shadow-inset-top (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: 0, @y-offset: 6px) {
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity);
+
+}
+
+.aesthetic-shadow-inset-right (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: -6px, @y-offset: 0) {
+
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity);
+
+}
+
+.aesthetic-shadow-inset-bottom (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: 0, @y-offset: -6px) {
+
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity);
+
+}
+
+.aesthetic-shadow-inset-left (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: 6px, @y-offset: 0 ) {
+
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity);
+
+}
+
+.aesthetic-shadow-inset-left-right (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: -6px, @y-offset: 0 ) {
+
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity), inset 6px 0 14px -6px rgba(@color, @opacity);
+
+}
+
+.aesthetic-shadow-inset-top-bottom (@color: black, @blur: 14px, @width: -3px,
+  @opacity: .5, @x-offset: 0, @y-offset: -6px ) {
+
+  box-shadow+: inset @x-offset @y-offset @blur @width rgba(@color, @opacity), inset 0 6px 14px -6px rgba(@color, @opacity);
+
+}
+
+.aesthetic-box-shadow (@color: black, @blur: @default-box-shadow-blur, @width: @default-box-shadow-width,  @opacity: .5, @x-offset: @default-box-shadow-offsetX,
+@y-offset: @default-box-shadow-offsetY) {
+  box-shadow+: @x-offset @y-offset @blur @width rgba(@color, @opacity);
+
+}
+
+.aesthetic-text-shadow(@color: black, @blur: 2px, @x: 0, @y: 2px ) {
+  text-shadow: @x @y @blur @color;
+}
