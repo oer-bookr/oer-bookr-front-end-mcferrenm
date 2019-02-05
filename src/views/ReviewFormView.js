@@ -29,6 +29,16 @@ class ReviewFormView extends Component {
     }));
   };
 
+  handleRating = e => {
+    e.persist();
+    this.setState(prevState => ({
+      reviewInputs: {
+        ...prevState.reviewInputs,
+        rating: e.target.dataset.rating
+      }
+    }));
+  };
+
   handleAddReview = e => {
     e.preventDefault();
 
@@ -36,8 +46,8 @@ class ReviewFormView extends Component {
     const id = this.props.match.params.id;
 
     const payload = {
-      book_id: 3,
-      rating: 5,
+      book_id: id,
+      rating,
       reviewer,
       review
     };
@@ -58,6 +68,7 @@ class ReviewFormView extends Component {
         books={this.props.books}
         reviewInputs={this.state.reviewInputs}
         handleChange={this.handleChange}
+        handleRating={this.handleRating}
         handleAddReview={this.handleAddReview}
       />
     );

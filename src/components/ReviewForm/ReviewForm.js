@@ -26,10 +26,48 @@ const ReviewForm = props => {
           onChange={props.handleChange}
           form="review-form"
         />
-
-        <span role="img" aria-label="5 Star">
-          ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
-        </span>
+        <div className="rating-stars">
+          <span
+            role="img"
+            aria-label="1 Star"
+            data-rating="1"
+            onClick={props.handleRating}
+          >
+            ⭐️
+          </span>
+          <span
+            role="img"
+            aria-label="2 Star"
+            data-rating="2"
+            onClick={props.handleRating}
+          >
+            ⭐️
+          </span>
+          <span
+            role="img"
+            aria-label="3 Star"
+            data-rating="3"
+            onClick={props.handleRating}
+          >
+            ⭐️
+          </span>
+          <span
+            role="img"
+            aria-label="4 Star"
+            data-rating="4"
+            onClick={props.handleRating}
+          >
+            ⭐️
+          </span>
+          <span
+            role="img"
+            aria-label="5 Star"
+            data-rating="5"
+            onClick={props.handleRating}
+          >
+            ⭐️
+          </span>
+        </div>
 
         <button onClick={props.handleAddReview}>Add review</button>
       </form>
