@@ -1,4 +1,4 @@
-// import { bookData } from "../../MOCK_DATA";
+import { bookData } from "../../MOCK_DATA";
 
 import {
   GET_BOOKS_START,
@@ -7,7 +7,7 @@ import {
 } from "../actions/bookListActions";
 
 const initialState = {
-  books: [],
+  books: bookData,
   isLoadingBooks: false,
   error: ""
 };

@@ -1,5 +1,4 @@
 import React from "react";
-// book: { title, author, publisher, license, image, reviews }
 
 const BookDetails = props => {
   const book = props.books.find(book => `${book.id}` === props.match.params.id);
@@ -13,9 +12,9 @@ const BookDetails = props => {
       <p>{license}</p>
       <img src={image} alt={title} />
       <h2>Reviews:</h2>
-      {/* <h4>{reviews.reviewer}</h4>
+      <h4>{reviews.reviewer}</h4>
       <p>{reviews.rating}</p>
-      <p>{reviews.review}</p> */}
+      <p>{reviews.review}</p>
     </div>
   );
 };
