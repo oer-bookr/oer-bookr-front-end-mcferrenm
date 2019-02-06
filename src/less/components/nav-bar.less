@@ -11,6 +11,11 @@
   height: 6rem;
   width: 100%;
 
+  &.fixed {
+    position: fixed;
+    z-index: 1;
+  }
+
   .nav-background {
     position: absolute;
     top: 0;
@@ -20,12 +25,20 @@
     .aesthetic-box-shadow(black);
     height: 5px;
     width: 100%;
+    transition: all .4s;
+
+    &.extend {
+      height: 100px;
+      z-index: -1;
+      transition: all .4s;
+    }
   }
 
   .nav-container {
-    margin-top: 1rem;
+    margin-top: 0rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     &.absolute {
       position: absolute;

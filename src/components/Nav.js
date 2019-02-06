@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="nav-bar">
-        <div className="nav-background"></div>
-        <div className="nav-container absolute">
+    <nav id="nav-bar" className="nav-bar">
+        <div id="nav-background" className="nav-background"></div>
+        <div id="nav-container" className="nav-container absolute">
             <NavLink exact to="/">
                 <div className="logo"></div>
             </NavLink>

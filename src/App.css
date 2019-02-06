@@ -343,6 +343,10 @@ table {
   height: 6rem;
   width: 100%;
 }
+.nav-bar.fixed {
+  position: fixed;
+  z-index: 1;
+}
 .nav-bar .nav-background {
   position: absolute;
   top: 0;
@@ -352,11 +356,18 @@ table {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
   height: 5px;
   width: 100%;
+  transition: all 0.4s;
+}
+.nav-bar .nav-background.extend {
+  height: 100px;
+  z-index: -1;
+  transition: all 0.4s;
 }
 .nav-bar .nav-container {
-  margin-top: 1rem;
+  margin-top: 0rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .nav-bar .nav-container.absolute {
   position: absolute;
