@@ -9,7 +9,6 @@ import logger from "redux-logger";
 import rootReducer from "./store/reducers";
 
 import "normalize.css";
-import "typeface-roboto";
 import "./index.css";
 import App from "./App";
 
