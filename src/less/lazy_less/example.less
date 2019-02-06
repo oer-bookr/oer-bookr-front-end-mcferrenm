@@ -1,0 +1,117 @@
+@import "less-animate";
+@import "source/color_pallet/color_pallet";
+
+body {
+    .background-linear-gradient(  #e2e2e2c9, #7baed8cf);
+    background-image+: url("./media/robert-lukeman-150146-unsplash.jpg");
+    .background-pan-top-right(30s);
+    
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.test-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-button{
+    
+    margin-top: 50px;
+    margin-right: 1rem;
+    .button-mixin();
+    
+}
+
+.button {
+
+    &__1 {
+        .background-radial-gradient-brighten-on-hover(@button-info, blue, 10%);
+    }
+    
+    &__2 {
+        .background-linear-gradient(@button-success, green);
+    }
+    
+    &__3 {
+        .background-linear-gradient-darken-on-hover(@button-danger, red)
+    }
+    
+    &__4 {
+        .aesthetic-box-shadow();
+        .button-press();
+    }
+    
+    &__5 {
+        
+        .background-linear-gradient(@button-info, darken(@button-info, 25%));
+        .button-scale-out-on-hover(@button-info);
+    }
+    
+    &__6 {
+        background-color: @button-success;
+        .aesthetic-shadow-inset-center(black);
+        &:hover {
+            .animation-infinite;
+            .attention-heart-beat();
+        }
+    }
+    
+    &__7{
+        .background-linear-gradient-darken-on-hover(@button-success, darken(@button-success, 40%));
+        .entrance-lightSpeedIn();
+        &:hover {
+            .exit-flipOutX();
+        }
+    }
+    
+    &__8{
+        .background-linear-gradient(@button-info, darken(@button-info, 25%));
+        
+    }
+    
+    &__9 {
+        .background-color-change-5-colors(blue, green, red, orange, pink);
+    }
+    
+    &__10 {
+        background-color: @button-danger;
+        .attention-wobble();
+        .animation-count(5);
+    }
+    
+    &__11 {
+        background-color: steelblue;
+        .animation-delay(6s);
+        .exit-hinge(1s);
+    }
+    
+    &__12 {
+        .background-radial-gradient-darken-on-hover(@button-info, darken(@button-info, 25%), white);
+        .aesthetic-shadow-inset-center();
+        .aesthetic-box-shadow(black, 4px, 2px, .5, -1px, 2px);
+        .button-press();
+        .button-scale-out-on-hover(blue);
+    }
+    
+    &__13 {
+        background-color: @button-success;
+        .background-slide-over(black, .2, 50deg);
+    }
+    
+    &__14 {
+        .button-border-right-grow-on-hover(green, 5px);
+        .button-border-top-grow-on-hover(green, 5px);
+    }
+    
+    &__15 {
+        background-color: #primaryColors[@color2];
+        color:            #adjacentColors.rightAdjacent[@desaturate5];
+        border:           2px solid #primaryColors[@color3];
+    }
+}
+

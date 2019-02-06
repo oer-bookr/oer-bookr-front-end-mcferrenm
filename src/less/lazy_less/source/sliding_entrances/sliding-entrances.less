@@ -1,0 +1,66 @@
+.entrance-slideInDown (@duration: @defaultDuration) {
+  animation-name: slideInDown;
+  .animation(@duration);
+
+  @keyframes slideInDown {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+
+.entrance-slideInLeft (@duration: @defaultDuration) {
+  animation-name: slideInLeft;
+  .animation(@duration);
+
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+
+.entrance-slideInRight (@duration: @defaultDuration) {
+  animation-name: slideInRight;
+  .animation(@duration);
+
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+
+.entrance-slideInUp (@duration: @defaultDuration) {
+  animation-name: slideInUp;
+  .animation(@duration);
+
+  @keyframes slideInUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+
+@color: #aa8866; // You may also use RGB Colors
+
+@defaultDuration: 1s;
+@default-box-shadow-offsetX: 0;
+@default-box-shadow-offsetY: 0;
+@default-box-shadow-blur: 20px;
+@default-box-shadow-width: 2px;
+@default-box-shadow-opacity: .5;
+
+//buttons
+@button-success: lightgreen;
+@button-danger: #f59090;
+@button-info: #537ee8;
+@button-border-radius: 20px;
+
+.animation(@duration: 1s) {
+  animation-duration: @duration;
+  animation-fill-mode: both;
+}
+
+.animation-infinite () {
+  animation-iteration-count: infinite;
+}
+
+.animation-count (@count: 3) {
+  animation-iteration-count: @count;
+}
+
+.animation-delay(@duration : 1s){
+  animation-delay: @duration;
+}
+
+//print media query
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}

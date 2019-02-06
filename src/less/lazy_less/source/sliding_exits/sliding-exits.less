@@ -1,0 +1,68 @@
+
+
+.exit-slideOutDown (@duration: @defaultDuration){
+  animation-name: slideOutDown;
+  .animation(@duration);
+
+  @keyframes slideOutDown {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+}
+
+
+.exit-slideOutLeft (@duration: @defaultDuration) {
+  animation-name: slideOutLeft;
+  .animation(@duration);
+
+  @keyframes slideOutLeft {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+}
+
+
+.exit-slideOutRight (@duration: @defaultDuration){
+  animation-name: slideOutRight;
+  .animation(@duration);
+
+  @keyframes slideOutRight {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+}
+
+
+.exit-slideOutUp (@duration: @defaultDuration){
+  animation-name: slideOutUp;
+  .animation(@duration);
+
+  @keyframes slideOutUp {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+}

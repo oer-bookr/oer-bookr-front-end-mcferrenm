@@ -1,0 +1,459 @@
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+body {
+  background-image: linear-gradient(to bottom right, #e2e2e2c9, #7baed8cf), url("./media/robert-lukeman-150146-unsplash.jpg");
+  animation: bg-pan-tr 30s both;
+  background-size: cover;
+  min-height: 100vh;
+}
+@-webkit-keyframes bg-pan-tr {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes bg-pan-tr {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.test-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.test-button {
+  margin-top: 50px;
+  margin-right: 1rem;
+  font-size: 20px;
+  padding: 1.2rem 5rem;
+  border-radius: 18px;
+  border: none;
+}
+.button__1 {
+  background-image: radial-gradient(closest-corner at 50% 50%, #537ee8 0, blue 100%);
+}
+.button__1:hover {
+  background-image: radial-gradient(closest-corner at 50% 50%, #80a0ee 0, #3333ff 100%);
+}
+.button__2 {
+  background-image: linear-gradient(to bottom right, lightgreen, green);
+}
+.button__3 {
+  background-image: linear-gradient(to bottom right, #f59090, red);
+}
+.button__3:hover {
+  background-image: linear-gradient(to bottom right, #ea1b1b, #800000);
+}
+.button__4 {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+.button__4:active {
+  transform: translateY(3px);
+  box-shadow: 0 -3px 20px 2px rgba(0, 0, 0, 0.5);
+}
+.button__5 {
+  background-image: linear-gradient(to bottom right, #537ee8, #163fa5);
+  position: relative;
+}
+.button__5::after {
+  content: "";
+  display: inline-block;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.7s;
+  background-color: #537ee8;
+  transform: translateX(-50%) translateY(-50%);
+}
+.button__5:hover::after {
+  transform: translateX(-50%) translateY(-50%) scaleX(2) scaleY(2);
+  opacity: 0;
+}
+.button__6 {
+  background-color: lightgreen;
+  box-shadow: inset 0 0 32px 9px rgba(0, 0, 0, 0.5);
+}
+.button__6:hover {
+  animation-iteration-count: infinite;
+  animation-name: heartBeat;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+.button__7 {
+  background-image: linear-gradient(to bottom right, lightgreen, #189a18);
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.button__7:hover {
+  background-image: linear-gradient(to bottom right, #22dd22, #072c07);
+}
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(-5deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.button__7:hover {
+  animation-duration: 0.75s;
+  animation-name: flipOutX;
+  backface-visibility: visible !important;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes flipOutX {
+  from {
+    transform: perspective(400px);
+  }
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+.button__8 {
+  background-image: linear-gradient(to bottom right, #537ee8, #163fa5);
+}
+.button__9 {
+  -webkit-animation: color-change-5x 8s linear infinite alternate both;
+  animation: color-change-5x 8s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: blue;
+  }
+  25% {
+    background: green;
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background: orange;
+  }
+  100% {
+    background: pink;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: blue;
+  }
+  25% {
+    background: green;
+  }
+  50% {
+    background: red;
+  }
+  75% {
+    background: orange;
+  }
+  100% {
+    background: pink;
+  }
+}
+.button__10 {
+  background-color: #f59090;
+  animation-name: wobble;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+  animation-iteration-count: 5;
+}
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.button__11 {
+  background-color: steelblue;
+  animation-delay: 6s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: hinge;
+}
+@keyframes hinge {
+  0% {
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40%,
+  80% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+.button__12 {
+  background-image: radial-gradient(closest-corner at 50% 50%, #537ee8 0, #163fa5 100%);
+  box-shadow: inset 0 0 32px 9px rgba(0, 0, 0, 0.5), -1px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.button__12:hover {
+  color: white;
+  background-image: radial-gradient(closest-corner at 50% 50%, #163fa5 0, #071435 100%);
+}
+.button__12:active {
+  transform: translateY(3px);
+  box-shadow: 0 -3px 20px 2px rgba(0, 0, 0, 0.5);
+}
+.button__12::after {
+  content: "";
+  display: inline-block;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.7s;
+  background-color: blue;
+  transform: translateX(-50%) translateY(-50%);
+}
+.button__12:hover::after {
+  transform: translateX(-50%) translateY(-50%) scaleX(2) scaleY(2);
+  opacity: 0;
+}
+.button__13 {
+  background-color: lightgreen;
+  position: relative;
+  overflow: hidden;
+}
+.button__13:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  transform: translateX(-120%) skewX(50deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+.button__13:hover:after {
+  transform: translateX(0) skewX(50deg);
+}
+.button__14 {
+  box-sizing: padding-box;
+  transition: all 0.4s;
+}
+.button__14:hover {
+  border-right: 5px solid green;
+}
+.button__14:hover {
+  border-top: 5px solid green;
+}
+.button__15 {
+  background-color: hsl(180.28037383, 50.77653631%, 75.09803922%);
+  color: hsl(210.28037383, 30.77653631%, 30.09803922%);
+  border: 2px solid hsl(180.28037383, 50.77653631%, 60.09803922%);
+}
+/*# sourceMappingURL=example.css.map */

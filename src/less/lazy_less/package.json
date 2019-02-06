@@ -1,0 +1,29 @@
+{
+  "name": "lazy_css",
+  "version": "1.0.0",
+  "description": "Lazy CSS mixins. ",
+  "main": "boxPallet.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiahtenbrink/Lazy-Animations.git"
+  },
+  "keywords": [
+    "CSS",
+    "mixins",
+    "mixin",
+    "less",
+    "animations"
+  ],
+  "author": "Jeremiah Tenbrink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremiahtenbrink/Lazy-Animations/issues"
+  },
+  "homepage": "https://github.com/jeremiahtenbrink/Lazy-Animations#readme",
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}

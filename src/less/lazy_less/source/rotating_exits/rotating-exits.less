@@ -1,0 +1,93 @@
+.exit-rotateOut (@duration: @defaultDuration) {
+  animation-name: rotateOut;
+  .animation(@duration);
+
+  @keyframes rotateOut {
+    from {
+      transform-origin: center;
+      opacity: 1;
+    }
+
+    to {
+      transform-origin: center;
+      transform: rotate3d(0, 0, 1, 200deg);
+      opacity: 0;
+    }
+  }
+}
+
+
+.exit-rotateOutDownLeft (@duration: @defaultDuration) {
+  animation-name: rotateOutDownLeft;
+  .animation(@duration);
+
+  @keyframes rotateOutDownLeft {
+    from {
+      transform-origin: left bottom;
+      opacity: 1;
+    }
+
+    to {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+  }
+}
+
+
+.exit-rotateOutDownRight(@duration: @defaultDuration) {
+  animation-name: rotateOutDownRight;
+  .animation(@duration);
+
+  @keyframes rotateOutDownRight {
+    from {
+      transform-origin: right bottom;
+      opacity: 1;
+    }
+
+    to {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
+  }
+}
+
+
+.exit-rotateOutUpLeft (@duration: @defaultDuration) {
+  animation-name: rotateOutUpLeft;
+  .animation(@duration);
+
+  @keyframes rotateOutUpLeft {
+    from {
+      transform-origin: left bottom;
+      opacity: 1;
+    }
+
+    to {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
+  }
+}
+
+
+.exit-rotateOutUpRight (@duration: @defaultDuration) {
+  animation-name: rotateOutUpRight;
+  .animation(@duration);
+
+  @keyframes rotateOutUpRight {
+    from {
+      transform-origin: right bottom;
+      opacity: 1;
+    }
+
+    to {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, 90deg);
+      opacity: 0;
+    }
+  }
+}
