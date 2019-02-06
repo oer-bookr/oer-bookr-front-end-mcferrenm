@@ -7,7 +7,7 @@ import {
   BookListView,
   BookDetailsView,
   ReviewFormView,
-  JumboSearchView
+  BookFormView
 } from "./views";
 
 import Nav from "./components/Nav";
@@ -19,12 +19,12 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <Route path="/books/:subject" component={JumboSearchView} />
         <Route exact path="/login" component={LoginView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
         <Route exact path="/book/:id" component={BookDetailsView} />
         <Route path="/book/:id/addreview" component={ReviewFormView} />
+        <Route path="/addbook" component={BookFormView} />
       </div>
     );
   }
