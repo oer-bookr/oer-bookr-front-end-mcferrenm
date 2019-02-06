@@ -7,10 +7,10 @@ import {
   BookListView,
   BookDetailsView,
   ReviewFormView,
-  BookFormView
+  BookFormView,
+  NewUserFormView,
+  NavView
 } from "./views";
-
-import Nav from "./components/Nav";
 
 import "./App.css";
 
@@ -18,8 +18,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav />
+        <Route path="/" component={NavView} />
         <Route exact path="/login" component={LoginView} />
+        <Route exact path="/addnewuser" component={NewUserFormView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
         <Route exact path="/book/:id" component={BookDetailsView} />

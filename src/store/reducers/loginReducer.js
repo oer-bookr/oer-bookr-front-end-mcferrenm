@@ -6,6 +6,7 @@ import {
 
 const initialState = {
   isLoggingIn: false,
+  isAuthenticated: false,
   error: ""
 };
 
@@ -20,7 +21,8 @@ export const loginReducer = (state = initialState, action) => {
     case LOGIN_USER_SUCCESS:
       return {
         ...state,
-        isLoggingIn: false
+        isLoggingIn: false,
+        isAuthenticated: true
       };
     case LOGIN_USER_FAILURE:
       return {

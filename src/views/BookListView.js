@@ -10,10 +10,17 @@ import { getBooks } from "../store/actions/bookListActions";
 
 class BookListView extends Component {
   componentDidMount() {
-    this.props.getBooks();
+    const token = localStorage.getItem("jwt");
+    const requestOptions = {
+      headers: {
+        authorization: token
+      }
+    };
+
+    this.props.getBooks(requestOptions);
   }
   render() {
-    if (window.localStorage.getItem("username") !== "the2bo5") {
+    if (!localStorage.jwt) {
       this.props.history.push("/login");
     }
     return (

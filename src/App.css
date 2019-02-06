@@ -18,6 +18,23 @@
   margin-bottom: 10px;
 }
 
+/* Add New User Form */
+
+.add-new-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-new-user form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-new-user input {
+  margin-bottom: 10px;
+}
+
 /* Navigation */
 
 .nav-bar {

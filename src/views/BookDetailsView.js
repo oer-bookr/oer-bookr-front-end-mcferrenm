@@ -12,9 +12,14 @@ import {
 
 class BookDetailsView extends Component {
   componentDidMount() {
-    if (this.props.books.length === 0) {
-      this.props.getBooks();
-    }
+    const token = localStorage.getItem("jwt");
+    const requestOptions = {
+      headers: {
+        authorization: token
+      }
+    };
+
+    this.props.getBooks(requestOptions);
   }
 
   handleDeleteBook = (e, id) => {
@@ -34,7 +39,7 @@ class BookDetailsView extends Component {
   };
 
   render() {
-    if (window.localStorage.getItem("username") !== "the2bo5") {
+    if (!localStorage.jwt) {
       this.props.history.push("/login");
     }
     return (

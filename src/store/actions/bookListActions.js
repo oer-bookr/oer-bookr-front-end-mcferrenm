@@ -24,10 +24,10 @@ export const UPDATE_BOOK_FAILURE = "UPDATE_BOOK_FAILURE";
 
 // TODO Change back to server response for addBook and updateBook payloads
 
-export const getBooks = () => dispatch => {
+export const getBooks = reqOptions => dispatch => {
   dispatch({ type: GET_BOOKS_START });
   axios
-    .get(`${BASE_URL}/books`)
+    .get(`${BASE_URL}/books`, reqOptions)
     .then(res => {
       dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
     })

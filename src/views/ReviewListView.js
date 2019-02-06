@@ -9,9 +9,9 @@ class ReviewListView extends Component {
     this.props.getReviews();
   }
   render() {
-    if (window.localStorage.getItem("username") !== "the2bo5") {
-      this.props.history.push("/login");
-    }
+    // if (window.localStorage.getItem("username") !== "the2bo5") {
+    //   this.props.history.push("/login");
+    // }
     return (
       <ReviewList
         {...this.props}

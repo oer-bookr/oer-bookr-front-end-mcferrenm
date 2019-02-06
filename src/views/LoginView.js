@@ -12,14 +12,6 @@ class LoginView extends Component {
     }
   };
 
-  // componentDidMount() {
-  //   if (window.localStorage.token) {
-  //     // dispatch action to set USER LOGGED IN
-  //     this.props.loginUser();
-  //     // if so go to dashboard
-  //   }
-  // }
-
   handleChange = e => {
     e.persist();
     this.setState(prevState => ({
@@ -31,10 +23,6 @@ class LoginView extends Component {
   };
 
   handleLogin = e => {
-    e.preventDefault();
-
-    localStorage.setItem("username", this.state.loginInput.username);
-
     this.props.loginUser(this.state.loginInput);
 
     this.props.history.push("/books/all");
@@ -54,7 +42,8 @@ class LoginView extends Component {
 }
 
 const mapStateToProps = state => ({
-  isLoggingIn: state.loginReducer.isLoggingIn
+  isLoggingIn: state.loginReducer.isLoggingIn,
+  isLoggedIn: state.loginReducer.isLoggedIn
 });
 
 export default connect(

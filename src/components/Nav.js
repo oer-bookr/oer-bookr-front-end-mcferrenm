@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+const Nav = props => {
   return (
     <nav className="nav-bar">
       <NavLink exact to="/">
@@ -10,6 +10,7 @@ const Nav = () => {
       <div className="nav-links">
         <NavLink to="/books/all">Books</NavLink>
         <NavLink to="/login">Login</NavLink>
+        <button onClick={props.handleSignout}>Logout</button>
       </div>
     </nav>
   );
