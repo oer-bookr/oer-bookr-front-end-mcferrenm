@@ -30,13 +30,14 @@ class App extends Component {
             document.getElementById("nav-bar").classList.add("fixed");
             document.getElementById("nav-container").classList.remove("absolute");
             document.getElementById("nav-background").classList.add("extend");
-            debugger
         }else{
             document.getElementById("nav-background").classList.remove("extend");
-            window.setTimeout(() => {
-                document.getElementById("nav-bar").classList.remove("fixed");
-                document.getElementById("nav-container").classList.add("absolute");
-            }, 400);
+            if (document.getElementById("nav-bar").classList.contains("fixed")){
+                window.setTimeout(() => {
+                    document.getElementById("nav-bar").classList.remove("fixed");
+                    document.getElementById("nav-container").classList.add("absolute");
+                }, 400);
+            }
         }
     }
     
