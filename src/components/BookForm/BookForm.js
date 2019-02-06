@@ -4,52 +4,56 @@ const BookForm = props => {
   return (
     <div className="book-form">
       <div className="book-form-header">
-        <h1>Add a Book</h1>
+        {props.isEditingBook ? <h1>Updating Book...</h1> : <h1>Add a Book</h1>}
       </div>
-      <form id="book-form">
+      <form>
         <input
           type="text"
           name="title"
           placeholder="Enter title..."
-          value={props.title}
+          value={props.bookInputs.title}
           onChange={props.handleChange}
         />
         <input
           type="text"
           name="author"
           placeholder="Enter author..."
-          value={props.author}
+          value={props.bookInputs.author}
           onChange={props.handleChange}
         />
         <input
           type="text"
           name="publisher"
           placeholder="Enter publisher..."
-          value={props.publisher}
+          value={props.bookInputs.publisher}
           onChange={props.handleChange}
         />
         <input
           type="text"
           name="license"
           placeholder="Enter license..."
-          value={props.license}
+          value={props.bookInputs.license}
           onChange={props.handleChange}
         />
         <input
           type="text"
           name="image"
           placeholder="Enter image url..."
-          value={props.image}
+          value={props.bookInputs.image}
           onChange={props.handleChange}
         />
         <input
           type="text"
           name="subject"
           placeholder="Enter subject..."
-          value={props.subject}
+          value={props.bookInputs.subject}
           onChange={props.handleChange}
         />
-        <button onClick={props.handleAddBook}>Add Book</button>
+        {props.isEditingBook ? (
+          <button onClick={props.handleUpdateBook}>Update</button>
+        ) : (
+          <button onClick={props.handleAddBook}>Add</button>
+        )}
       </form>
     </div>
   );

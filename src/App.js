@@ -24,7 +24,7 @@ class App extends Component {
         <Route path="/books/:subject" component={BookListView} />
         <Route exact path="/book/:id" component={BookDetailsView} />
         <Route path="/book/:id/addreview" component={ReviewFormView} />
-        <Route path="/addbook" component={BookFormView} />
+        <Route path="/book-form" component={BookFormView} />
       </div>
     );
   }

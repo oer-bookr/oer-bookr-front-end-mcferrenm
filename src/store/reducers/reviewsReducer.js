@@ -1,4 +1,4 @@
-import { REVIEW_MOCK_DATA } from "../../REVIEW_MOCK_DATA";
+// import { REVIEW_MOCK_DATA } from "../../REVIEW_MOCK_DATA";
 
 import {
   GET_REVIEWS_START,
@@ -10,7 +10,7 @@ import {
 } from "../actions/reviewListActions";
 
 const initialState = {
-  reviews: REVIEW_MOCK_DATA,
+  reviews: [],
   isLoadingReviews: false,
   isAddingReview: false,
   error: ""

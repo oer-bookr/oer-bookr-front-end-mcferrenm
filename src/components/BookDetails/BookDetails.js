@@ -20,6 +20,7 @@ const BookDetails = props => {
         <button onClick={e => props.handleDeleteBook(e, id)}>
           Delete Book
         </button>
+        <button onClick={e => props.handleEditBook(e, id)}>Update Book</button>
       </div>
       <h2>{book.title}</h2>
       <h3>{book.author}</h3>

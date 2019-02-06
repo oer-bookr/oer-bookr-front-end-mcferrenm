@@ -10,11 +10,12 @@ import { getBooks } from "../store/actions/bookListActions";
 
 class BookListView extends Component {
   componentDidMount() {
-    if (this.props.books.length === 0) {
-      this.props.getBooks();
-    }
+    this.props.getBooks();
   }
   render() {
+    if (window.localStorage.getItem("username") !== "the2bo5") {
+      this.props.history.push("/login");
+    }
     return (
       <div>
         <Route path="/books/:subject" component={JumboSearchView} />

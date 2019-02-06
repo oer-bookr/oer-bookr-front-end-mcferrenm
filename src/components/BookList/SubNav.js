@@ -14,7 +14,7 @@ const SubNav = () => {
         <NavLink to="/books/all">All</NavLink>
       </div>
       <div className="right-nav">
-        <Link to="/addbook">
+        <Link to="/book-form">
           <button>Add a Book</button>
         </Link>
       </div>

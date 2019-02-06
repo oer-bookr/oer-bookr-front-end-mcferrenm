@@ -3,7 +3,12 @@ import { connect } from "react-redux";
 import Loader from "react-loader-spinner";
 
 import BookDetails from "../components/BookDetails/BookDetails";
-import { getBooks, deleteBook } from "../store/actions/bookListActions";
+import {
+  getBooks,
+  deleteBook,
+  editBook,
+  updateBook
+} from "../store/actions/bookListActions";
 
 class BookDetailsView extends Component {
   componentDidMount() {
@@ -20,7 +25,18 @@ class BookDetailsView extends Component {
     this.props.history.push("/books/all");
   };
 
+  handleEditBook = (e, editingId) => {
+    e.preventDefault();
+
+    this.props.editBook(editingId);
+
+    this.props.history.push("/book-form");
+  };
+
   render() {
+    if (window.localStorage.getItem("username") !== "the2bo5") {
+      this.props.history.push("/login");
+    }
     return (
       <>
         {this.props.isLoadingBooks && (
@@ -30,6 +46,7 @@ class BookDetailsView extends Component {
           {...this.props}
           books={this.props.books}
           handleDeleteBook={this.handleDeleteBook}
+          handleEditBook={this.handleEditBook}
         />
       </>
     );
@@ -44,5 +61,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getBooks, deleteBook }
+  { getBooks, deleteBook, editBook, updateBook }
 )(BookDetailsView);

@@ -7,6 +7,11 @@ import {
   ADD_BOOK_START,
   ADD_BOOK_SUCCESS,
   ADD_BOOK_FAILURE,
+  UPDATE_BOOK_START,
+  UPDATE_BOOK_SUCCESS,
+  UPDATE_BOOK_FAILURE,
+  EDIT_BOOK_START,
+  EDIT_BOOK_SUCCESS,
   DELETE_BOOK_START,
   DELETE_BOOK_SUCCESS,
   DELETE_BOOK_FAILURE
@@ -17,6 +22,8 @@ const initialState = {
   isLoadingBooks: false,
   isAddingBook: false,
   isDeletingBook: false,
+  isEditingBook: false,
+  editingId: false,
   error: ""
 };
 
@@ -58,6 +65,39 @@ export const booksReducer = (state = initialState, action) => {
         isAddingBook: false,
         error: action.payload
       };
+    case EDIT_BOOK_START:
+      return {
+        ...state,
+        isEditingBook: true,
+        editingId: action.payload,
+        error: ""
+      };
+    case EDIT_BOOK_SUCCESS:
+      return {
+        ...state,
+        isEditingBook: false
+      };
+    case UPDATE_BOOK_START:
+      return {
+        ...state,
+        isUpdatingBook: true,
+        error: ""
+      };
+    case UPDATE_BOOK_SUCCESS:
+      // const updatedBooks = state.books.filter(
+      //   book => book.id !== Number(action.payload)
+      // );
+      return {
+        ...state,
+        // books: [],
+        isUpdatingBook: false
+      };
+    case UPDATE_BOOK_FAILURE:
+      return {
+        ...state,
+        isUpdatingBook: false,
+        error: action.payload
+      };
     case DELETE_BOOK_START:
       return {
         ...state,
@@ -65,13 +105,13 @@ export const booksReducer = (state = initialState, action) => {
         error: ""
       };
     case DELETE_BOOK_SUCCESS:
-      const books = state.books.filter(
+      const remainingBooks = state.books.filter(
         book => book.id !== Number(action.payload)
       );
 
       return {
         ...state,
-        books: books,
+        books: remainingBooks,
         isDeletingBook: false
       };
     case DELETE_BOOK_FAILURE:
