@@ -3,37 +3,81 @@
 /* Navigation */
 
 .nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  background: rgb(189, 189, 189);
-  padding: 0 50px;
+  padding: 1rem 2rem;
+  background: transparent;
+  font-size: 1.8rem;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+
+  .nav-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    .background-linear-gradient(@color-light-green, @color-light-blue);
+    .aesthetic-box-shadow(black);
+    height: 5px;
+    width: 100%;
+  }
+
+  .nav-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+    &.absolute {
+      position: absolute;
+      top: 1.2rem;
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+.logo {
+  padding-top: 1rem;
+  background-image: url("./images/oerBookrLogoColor-clam-shell.png");
+  height: 60px;
+  width: 140px;
+  background-size: cover;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .nav-links a {
-  margin-right: 10px;
+  margin-right: 4rem;
+  color: @color-clam-shell;
 }
 
 .sub-nav-bar {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: baseline;
+  background: transparent;
 }
 
 .sub-nav-bar h4 {
-  margin-right: 10px;
+  font-size: 3rem;
+  margin-right: 2vw;
 }
 
 .sub-nav-links {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.6rem;
 }
 
-.sub-nav-links a {
-  margin-right: 10px;
+.sub-nav-links a:not(:last-child) {
+  margin-right: 2vw;
+  cursor: pointer;
 }

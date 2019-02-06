@@ -1,112 +1,214 @@
-.App {
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
 }
-
-/* Login */
-
-.login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.login form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-
-.login input {
-  margin-bottom: 10px;
+body {
+  line-height: 1;
 }
-
-/* Navigation */
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  background: rgb(189, 189, 189);
-  padding: 0 50px;
+ol,
+ul {
+  list-style: none;
 }
-
-.nav-links {
-  display: flex;
-  justify-content: space-evenly;
+blockquote,
+q {
+  quotes: none;
 }
-
-.nav-links a {
-  margin-right: 10px;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-
-.sub-nav-bar {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-.sub-nav-bar h4 {
-  margin-right: 10px;
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?yahql');
+  src: url('fonts/icomoon.eot?yahql#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?yahql') format('truetype'), url('fonts/icomoon.woff?yahql') format('woff'), url('fonts/icomoon.svg?yahql#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-.sub-nav-links {
-  display: flex;
-  justify-content: space-evenly;
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.sub-nav-links a {
-  margin-right: 10px;
+.icon-instagram:before {
+  content: "\e905";
 }
-
-/* JumboSearch */
-
-.jumbo-search {
-  background: rgb(189, 189, 189);
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.icon-brand:before {
+  content: "\e905";
 }
-
-.jumbo-search input {
-  width: 450px;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 0 10px 80px 0;
+.icon-social:before {
+  content: "\e905";
 }
-
-.jumbo-search button {
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin-bottom: 80px;
-  cursor: pointer;
+.icon-linkedin:before {
+  content: "\e906";
 }
-
-/* Home */
-
-.home-wrapper {
-  display: flex;
-  justify-content: center;
+.icon-brand1:before {
+  content: "\e906";
 }
-
-/* Book List */
-
-.book-list-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1024px;
-  margin: 0 auto;
+.icon-social1:before {
+  content: "\e906";
 }
-
-.book-list-item-wrapper {
-  width: 300px;
-  height: 450px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 10px;
-  margin: 0 30px 30px 0;
+.icon-twitter:before {
+  content: "\e907";
 }
-
+.icon-brand2:before {
+  content: "\e907";
+}
+.icon-tweet:before {
+  content: "\e907";
+}
+.icon-social2:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-brand3:before {
+  content: "\e908";
+}
+.icon-social3:before {
+  content: "\e908";
+}
+.icon-comment:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e901";
+}
+.icon-book:before {
+  content: "\e902";
+}
+.icon-star:before {
+  content: "\e903";
+}
+.icon-share:before {
+  content: "\e904";
+}
 /* Book Details */
-
 .book-details {
   margin: 10px auto;
   width: 50%;
@@ -117,7 +219,6 @@
   padding: 10px;
   position: relative;
 }
-
 .book-details .add-review-link {
   position: absolute;
   top: 0;
@@ -128,13 +229,176 @@
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
 .book-details .add-review-link:hover {
   background: lightgrey;
 }
-
+/* Book List */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 10rem auto;
+}
+.book-list-wrapper {
+  display: flex;
+  background-image: linear-gradient(to bottom right, #ffffff, #aa8866);
+  margin-top: -4rem;
+  z-index: -1;
+}
+.book-list-item-wrapper {
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  margin: 0 30px 30px 0;
+}
+/* Home */
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+}
+/* JumboSearch */
+.jumbo-search {
+  background-image: linear-gradient(to bottom right, rgba(102, 51, 17, 0.7), rgba(34, 17, 0, 0.7)), url("./images/clarisse-meyer-162874-unsplash.jpg");
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.jumbo-search input {
+  width: 450px;
+  color: #221100;
+  padding: 10px;
+  border-radius: 1rem;
+  border: 2px solid #221100;
+  margin: 0 10px 80px 0;
+}
+.jumbo-search button {
+  background-color: #557777;
+  box-shadow: 0 0 20px 2px rgba(34, 17, 0, 0.5);
+  animation-iteration-count: infinite;
+  position: relative;
+  z-index: 1;
+  color: #221100;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 0;
+  padding: 0.7rem 6rem;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+.jumbo-search button:hover {
+  background-color: #97b5b5;
+}
+.jumbo-search button:active {
+  transform: translateY(3px);
+  box-shadow: 0 -3px 20px 2px rgba(0, 0, 0, 0.5);
+}
+.jumbo-search button::after {
+  content: "";
+  display: inline-block;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.7s;
+  background-color: #557777;
+  transform: translateX(-50%) translateY(-50%);
+}
+.jumbo-search button:hover::after {
+  transform: translateX(-50%) translateY(-50%) scaleX(2) scaleY(2);
+  opacity: 0;
+}
+/* Login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login input {
+  margin-bottom: 10px;
+}
+/* Navigation */
+.nav-bar {
+  padding: 1rem 2rem;
+  background: transparent;
+  font-size: 1.8rem;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+}
+.nav-bar .nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(to bottom right, #557777, #99aabb);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  height: 5px;
+  width: 100%;
+}
+.nav-bar .nav-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar .nav-container.absolute {
+  position: absolute;
+  top: 1.2rem;
+  width: 100%;
+}
+.logo {
+  padding-top: 1rem;
+  background-image: url("./images/oerBookrLogoColor-clam-shell.png");
+  height: 60px;
+  width: 140px;
+  background-size: cover;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links a {
+  margin-right: 4rem;
+  color: #ccbbaa;
+}
+.sub-nav-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: transparent;
+}
+.sub-nav-bar h4 {
+  font-size: 3rem;
+  margin-right: 2vw;
+}
+.sub-nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+}
+.sub-nav-links a:not(:last-child) {
+  margin-right: 2vw;
+  cursor: pointer;
+}
 /* Review Form */
-
 .review-form {
   margin: 10px auto;
   width: 50%;
@@ -146,7 +410,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px;
 }
-
 .review-form .review-form-header {
   display: flex;
   justify-content: space-evenly;
@@ -155,11 +418,9 @@
   height: 50px;
   margin-bottom: 50px;
 }
-
 .review-form .review-form-header img {
   width: 50px;
 }
-
 .review-form form {
   display: flex;
   flex-direction: column;
@@ -168,14 +429,12 @@
   width: 50%;
   justify-content: space-between;
 }
-
 .review-form input {
   padding: 10px;
   width: 100%;
   border-radius: 3px;
   border: 1px solid lightgrey;
 }
-
 .review-form textarea {
   padding: 10px;
   height: 100px;
@@ -183,10 +442,10 @@
   border-radius: 3px;
   border: 1px solid lightgrey;
 }
-
 .review-form button {
   padding: 10px;
   width: 100%;
   border-radius: 3px;
   border: 1px solid lightgrey;
 }
+/*# sourceMappingURL=App.css.map */

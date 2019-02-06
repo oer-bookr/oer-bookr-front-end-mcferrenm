@@ -16,9 +16,11 @@ const BookList = props => {
 
   return (
     <div className="book-list-wrapper">
-      {filteredBooks.map(book => {
-        return <BookListItem key={book.id} book={book} />;
-      })}
+        <div className="book-list">
+            { filteredBooks.map( book => {
+                return <BookListItem key={ book.id } book={ book } />;
+            } ) }
+        </div>
     </div>
   );
 };

@@ -1,15 +1,23 @@
 /* Book List */
 
-.book-list-wrapper {
+.book-list{
   display: flex;
   flex-wrap: wrap;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 10rem auto;
+}
+
+.book-list-wrapper {
+  display: flex;
+  .background-linear-gradient(white, @color-light-brown);
+  margin-top: -4rem;
+  z-index: -1;
 }
 
 .book-list-item-wrapper {
   width: 300px;
   height: 450px;
+
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px;
   margin: 0 30px 30px 0;

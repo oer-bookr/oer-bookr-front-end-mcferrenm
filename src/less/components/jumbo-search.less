@@ -1,24 +1,40 @@
 /* JumboSearch */
 
 .jumbo-search {
-  background: rgb(189, 189, 189);
+
+  .background-linear-gradient(@color-brown, @color-wood-brown, .7);
+  background-image+: url("./images/clarisse-meyer-162874-unsplash.jpg");
+  background-size: cover;
   height: 600px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .jumbo-search input {
   width: 450px;
+  color: @color-wood-brown;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 1rem;
+  border: 2px solid @color-wood-brown;
   margin: 0 10px 80px 0;
 }
 
 .jumbo-search button {
-  padding: 10px 60px;
-  border-radius: 5px;
+  .background-glow-on-hover(@color-light-green);
+  .button-press();
+  .aesthetic-box-shadow(@color-wood-brown);
+  .animation-infinite;
+  .button-scale-out-on-hover(@color-light-green, 1rem);
+  color: @color-wood-brown;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 0;
+  padding: .7rem 6rem;
+  border-radius: 1rem;
+  border: none;
   margin-bottom: 80px;
   cursor: pointer;
 }
