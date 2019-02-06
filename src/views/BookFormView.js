@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import BookForm from "../components/BookForm/BookForm";
-import { addBook } from "../store/actions/bookListActions";
+import { addBook, getBooks } from "../store/actions/bookListActions";
 
 const CLEARED_BOOK = {
   title: "",
@@ -69,5 +69,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { addBook }
+  { addBook, getBooks }
 )(BookFormView);

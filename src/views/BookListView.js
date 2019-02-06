@@ -10,13 +10,11 @@ import { getBooks } from "../store/actions/bookListActions";
 
 class BookListView extends Component {
   componentDidMount() {
-    this.props.getBooks();
+    if (this.props.books.length === 0) {
+      this.props.getBooks();
+    }
   }
   render() {
-    if (!this.props.books) {
-      return <h2>Loading item data...</h2>;
-    }
-
     return (
       <div>
         <Route path="/books/:subject" component={JumboSearchView} />
@@ -24,7 +22,11 @@ class BookListView extends Component {
         {this.props.isLoadingBooks && (
           <Loader type="Grid" color="#somecolor" height={80} width={80} />
         )}
-        <BookList {...this.props} searchInput={this.props.searchInput} />
+        <BookList
+          {...this.props}
+          searchInput={this.props.searchInput}
+          books={this.props.books}
+        />
       </div>
     );
   }

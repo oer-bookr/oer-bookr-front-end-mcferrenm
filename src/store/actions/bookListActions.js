@@ -24,10 +24,10 @@ export const getBooks = () => dispatch => {
 
 export const addBook = newBook => dispatch => {
   dispatch({ type: ADD_BOOK_START });
-  console.log(newBook);
   axios
     .post(`${BASE_URL}/books`, newBook)
-    .then(res => dispatch({ type: ADD_BOOK_SUCCESS, payload: res.data }))
+    .then(res => console.log(res))
+    .then(res => dispatch({ type: ADD_BOOK_SUCCESS, payload: newBook }))
     .catch(err => dispatch({ type: ADD_BOOK_FAILURE, payload: err }));
 };
 
@@ -35,7 +35,6 @@ export const deleteBook = id => dispatch => {
   dispatch({ type: DELETE_BOOK_START });
   axios
     .delete(`${BASE_URL}/books/${id}`)
-    // .then(res => console.log(res.data.id))
     .then(res => dispatch({ type: DELETE_BOOK_SUCCESS, payload: res.data.id }))
     .catch(err => dispatch({ type: DELETE_BOOK_FAILURE, payload: err }));
 };
