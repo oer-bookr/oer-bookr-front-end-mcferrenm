@@ -1,12 +1,14 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
+import { SubNavContainer } from "../../styles/BookListStyles";
+import { Button } from "../../styles/reusables/Button";
+
 const SubNav = () => {
   return (
-    <nav className="sub-nav-bar">
+    <SubNavContainer>
       <div className="left-nav" />
       <div className="sub-nav-links">
-        <h4>Subjects:</h4>
         <NavLink to="/books/math">Math</NavLink>
         <NavLink to="/books/history">History</NavLink>
         <NavLink to="/books/english">English</NavLink>
@@ -15,10 +17,10 @@ const SubNav = () => {
       </div>
       <div className="right-nav">
         <Link to="/book-form">
-          <button>Add a Book</button>
+          <Button>Add a Book</Button>
         </Link>
       </div>
-    </nav>
+    </SubNavContainer>
   );
 };
 

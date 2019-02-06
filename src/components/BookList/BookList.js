@@ -1,6 +1,7 @@
 import React from "react";
 
 import BookListItem from "./BookListItem";
+import { BookListWrapper } from "../../styles/BookListStyles";
 
 const BookList = props => {
   const subject = props.match.params.subject;
@@ -16,11 +17,11 @@ const BookList = props => {
   });
 
   return (
-    <div className="book-list-wrapper">
+    <BookListWrapper>
       {filteredBooks.map(book => {
         return <BookListItem key={book.id} book={book} />;
       })}
-    </div>
+    </BookListWrapper>
   );
 };
 

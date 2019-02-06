@@ -1,18 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { NavBar } from "../styles/NavStyles";
+import { Button } from "../styles/reusables/Button";
 
 const Nav = props => {
   return (
-    <nav className="nav-bar">
+    <NavBar>
       <NavLink exact to="/">
         <h1>OER Bookr</h1>
       </NavLink>
       <div className="nav-links">
-        <NavLink to="/books/all">Books</NavLink>
-        <NavLink to="/login">Login</NavLink>
-        <button onClick={props.handleSignout}>Logout</button>
+        <Button>
+          <NavLink to="/books/all">Books</NavLink>
+        </Button>
+        {props.isAuthenticated ? (
+          <Button>
+            <NavLink to="/login">Login</NavLink>
+          </Button>
+        ) : (
+          <Button onClick={props.handleSignout}>Logout</Button>
+        )}
       </div>
-    </nav>
+    </NavBar>
   );
 };
 

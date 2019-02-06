@@ -12,6 +12,8 @@ import {
   NavView
 } from "./views";
 
+import Footer from "./components/Footer";
+
 import "./App.css";
 
 class App extends Component {
@@ -26,6 +28,7 @@ class App extends Component {
         <Route exact path="/book/:id" component={BookDetailsView} />
         <Route path="/book/:id/addreview" component={ReviewFormView} />
         <Route path="/book-form" component={BookFormView} />
+        <Footer />
       </div>
     );
   }
