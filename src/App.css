@@ -145,13 +145,23 @@
   align-items: flex-start;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 10px;
-  position: relative;
+}
+
+.book-details .buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .book-details .add-review-link {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.book-details button {
   margin: 15px;
   border: 1px solid lightgrey;
   border-radius: 3px;

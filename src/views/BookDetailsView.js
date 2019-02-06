@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Loader from "react-loader-spinner";
 
 import BookDetails from "../components/BookDetails/BookDetails";
-import { getBooks } from "../store/actions/bookListActions";
+import { getBooks, deleteBook } from "../store/actions/bookListActions";
 
 class BookDetailsView extends Component {
   componentDidMount() {
@@ -11,24 +12,37 @@ class BookDetailsView extends Component {
     }
   }
 
+  handleDeleteBook = (e, id) => {
+    e.preventDefault();
+
+    this.props.deleteBook(id);
+
+    this.props.history.push("/books/all");
+  };
+
   render() {
-    return <BookDetails {...this.props} books={this.props.books} />;
-    // return (
-    //   <div>
-    //     {this.props.books.map(book => (
-    //       <p>{book.title}</p>
-    //     ))}
-    //   </div>
-    // );
+    return (
+      <>
+        {this.props.isLoadingBooks && (
+          <Loader type="Grid" color="#somecolor" height={80} width={80} />
+        )}
+        <BookDetails
+          {...this.props}
+          books={this.props.books}
+          handleDeleteBook={this.handleDeleteBook}
+        />
+      </>
+    );
   }
 }
 
 const mapStateToProps = state => ({
   books: state.booksReducer.books,
+  isLoadingBooks: state.booksReducer.isLoadingBooks,
   reviews: state.reviewsReducer.reviews
 });
 
 export default connect(
   mapStateToProps,
-  { getBooks }
+  { getBooks, deleteBook }
 )(BookDetailsView);

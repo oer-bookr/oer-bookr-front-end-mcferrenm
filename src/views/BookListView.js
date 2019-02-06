@@ -13,6 +13,10 @@ class BookListView extends Component {
     this.props.getBooks();
   }
   render() {
+    if (!this.props.books) {
+      return <h2>Loading item data...</h2>;
+    }
+
     return (
       <div>
         <Route path="/books/:subject" component={JumboSearchView} />

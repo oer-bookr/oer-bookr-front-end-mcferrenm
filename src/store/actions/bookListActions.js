@@ -10,6 +10,10 @@ export const ADD_BOOK_START = "ADD_BOOK_START";
 export const ADD_BOOK_SUCCESS = "ADD_BOOK_SUCCESS";
 export const ADD_BOOK_FAILURE = "ADD_BOOK_FAILURE";
 
+export const DELETE_BOOK_START = "DELETE_BOOK_START";
+export const DELETE_BOOK_SUCCESS = "DELETE_BOOK_SUCCESS";
+export const DELETE_BOOK_FAILURE = "DELETE_BOOK_FAILURE";
+
 export const getBooks = () => dispatch => {
   dispatch({ type: GET_BOOKS_START });
   axios
@@ -23,7 +27,15 @@ export const addBook = newBook => dispatch => {
   console.log(newBook);
   axios
     .post(`${BASE_URL}/books`, newBook)
-    // .then(res => dispatch({ type: ADD_BOOK_SUCCESS, payload: res.data }))
-    // .catch(err => dispatch({ type: ADD_BOOK_FAILURE, payload: err }));
-    .then(res => console.log(res));
+    .then(res => dispatch({ type: ADD_BOOK_SUCCESS, payload: res.data }))
+    .catch(err => dispatch({ type: ADD_BOOK_FAILURE, payload: err }));
+};
+
+export const deleteBook = id => dispatch => {
+  dispatch({ type: DELETE_BOOK_START });
+  axios
+    .delete(`${BASE_URL}/books/${id}`)
+    // .then(res => console.log(res.data.id))
+    .then(res => dispatch({ type: DELETE_BOOK_SUCCESS, payload: res.data.id }))
+    .catch(err => dispatch({ type: DELETE_BOOK_FAILURE, payload: err }));
 };
