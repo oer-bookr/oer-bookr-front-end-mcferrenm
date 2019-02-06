@@ -19,7 +19,7 @@ const Login = props => {
           placeholder="Enter password..."
           onChange={props.handleChange}
         />
-        <button onClick={props.handleSubmit}>Enter</button>
+        <button onClick={props.handleLogin}>Enter</button>
       </form>
     </div>
   );

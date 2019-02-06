@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Login from "../components/Login";
+import { loginUser } from "../store/actions/loginActions";
 
 class LoginView extends Component {
   state = {
@@ -10,12 +12,13 @@ class LoginView extends Component {
     }
   };
 
-  componentDidMount() {
-    if (window.localStorage.token) {
-      // dispatch action to set USER LOGGED IN
-      // if so go to dashboard
-    }
-  }
+  // componentDidMount() {
+  //   if (window.localStorage.token) {
+  //     // dispatch action to set USER LOGGED IN
+  //     this.props.loginUser();
+  //     // if so go to dashboard
+  //   }
+  // }
 
   handleChange = e => {
     e.persist();
@@ -27,20 +30,12 @@ class LoginView extends Component {
     }));
   };
 
-  handleSubmit = e => {
+  handleLogin = e => {
     e.preventDefault();
 
     localStorage.setItem("username", this.state.loginInput.username);
 
-    // const endpoint = `${process.env.REACT_APP_API_URL}/api/login`;
-
-    // axios
-    //   .post(endpoint, this.state)
-    //   .then(res => {
-    //     localStorage.setItem("jwt", res.data.token);
-    //     window.location.reload(true);
-    //   })
-    //   .catch(err => console.error(err));
+    this.props.loginUser(this.state.loginInput);
 
     this.props.history.push("/books/all");
   };
@@ -51,11 +46,18 @@ class LoginView extends Component {
         <Login
           loginInput={this.state.loginInput}
           handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
+          handleLogin={this.handleLogin}
         />
       </div>
     );
   }
 }
 
-export default LoginView;
+const mapStateToProps = state => ({
+  isLoggingIn: state.loginReducer.isLoggingIn
+});
+
+export default connect(
+  mapStateToProps,
+  { loginUser }
+)(LoginView);

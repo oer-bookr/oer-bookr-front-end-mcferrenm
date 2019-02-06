@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = "https://oer-bookr-api.herokuapp.com";
+// const endpoint = `${process.env.REACT_APP_API_URL}/api/login`;
 
 export const GET_BOOKS_START = "GET_BOOKS_START";
 export const GET_BOOKS_SUCCESS = "GET_BOOKS_SUCCESS";
@@ -29,7 +30,6 @@ export const getBooks = () => dispatch => {
     .get(`${BASE_URL}/books`)
     .then(res => {
       dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
-      // window.localStorage.setItem(res.data.token.....)
     })
     .catch(err => dispatch({ type: GET_BOOKS_FAILURE, payload: err }));
 };
@@ -63,7 +63,7 @@ export const updateBook = updatedBook => dispatch => {
     // .then(res => console.log(res));
     .then(res => {
       dispatch({ type: UPDATE_BOOK_SUCCESS });
-      // window.location.href = "/books/all";
+      dispatch({ type: EDIT_BOOK_SUCCESS });
       dispatch({ type: GET_BOOKS_START });
       axios
         .get(`${BASE_URL}/books`)
