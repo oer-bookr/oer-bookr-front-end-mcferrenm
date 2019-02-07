@@ -1,14 +1,16 @@
 import React from "react";
 
+import { HomeContainer } from "../styles/HomeStyles";
+
 const Home = props => {
   const handleNavToBooks = e => {
     e.preventDefault();
     props.history.push("/books/all");
   };
   return (
-    <div className="home-wrapper">
+    <HomeContainer>
       <button onClick={handleNavToBooks}>Get OER Books!</button>
-    </div>
+    </HomeContainer>
   );
 };
 

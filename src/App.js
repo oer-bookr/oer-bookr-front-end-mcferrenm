@@ -8,22 +8,19 @@ import {
   BookDetailsView,
   ReviewFormView,
   BookFormView,
-  NewUserFormView,
   NavView
 } from "./views";
 
+import { AppContainer } from "./styles/AppStyles";
 import Footer from "./components/Footer";
-
-import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppContainer>
         <Route path="/" component={NavView} />
 
         <Route exact path="/login" component={LoginView} />
-        <Route exact path="/addnewuser" component={NewUserFormView} />
         <Route exact path="/" component={HomeView} />
         <Route path="/books/:subject" component={BookListView} />
         <Route exact path="/book/:id" component={BookDetailsView} />
@@ -31,7 +28,7 @@ class App extends Component {
         <Route path="/book-form" component={BookFormView} />
 
         <Footer />
-      </div>
+      </AppContainer>
     );
   }
 }

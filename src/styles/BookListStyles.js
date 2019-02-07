@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BookListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 1024px;
   margin: 0 auto;
   justify-content: center;
 `;
@@ -28,8 +27,7 @@ export const SubNavContainer = styled.nav`
   }
 
   .sub-nav-links {
-    width: 500px;
-    min-width: 400px;
+    width: 700px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,7 +37,7 @@ export const SubNavContainer = styled.nav`
   }
 
   .sub-nav-links a {
-    padding: 0 25px;
+    padding: 0 42px;
     border-right: 1px solid lightgrey;
   }
 

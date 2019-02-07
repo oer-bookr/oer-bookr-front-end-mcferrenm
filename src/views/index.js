@@ -6,5 +6,4 @@ export { default as ReviewFormView } from "./ReviewFormView";
 export { default as ReviewListView } from "./ReviewListView";
 export { default as JumboSearchView } from "./JumboSearchView";
 export { default as BookFormView } from "./BookFormView";
-export { default as NewUserFormView } from "./NewUserFormView";
 export { default as NavView } from "./NavView";

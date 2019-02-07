@@ -1,8 +1,11 @@
 import React from "react";
 
+import { LoginContainer } from "../styles/LoginStyles";
+import { Button } from "../styles/reusables/Button";
+
 const Login = props => {
   return (
-    <div className="login">
+    <LoginContainer>
       <h1>Login</h1>
       <form>
         <input
@@ -19,9 +22,9 @@ const Login = props => {
           placeholder="Enter password..."
           onChange={props.handleChange}
         />
-        <button onClick={props.handleLogin}>Enter</button>
+        <Button onClick={props.handleLogin}>Enter</Button>
       </form>
-    </div>
+    </LoginContainer>
   );
 };
 
