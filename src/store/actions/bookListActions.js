@@ -22,8 +22,6 @@ export const UPDATE_BOOK_START = "UPDATE_BOOK_START";
 export const UPDATE_BOOK_SUCCESS = "UPDATE_BOOK_SUCCESS";
 export const UPDATE_BOOK_FAILURE = "UPDATE_BOOK_FAILURE";
 
-// TODO Change back to server response for addBook and updateBook payloads
-
 export const getBooks = reqOptions => dispatch => {
   dispatch({ type: GET_BOOKS_START });
   axios

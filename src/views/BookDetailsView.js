@@ -19,7 +19,9 @@ class BookDetailsView extends Component {
       }
     };
 
-    this.props.getBooks(requestOptions);
+    if (this.props.books.length === 0) {
+      this.props.getBooks(requestOptions);
+    }
   }
 
   handleDeleteBook = (e, id) => {

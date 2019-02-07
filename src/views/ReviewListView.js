@@ -12,7 +12,10 @@ class ReviewListView extends Component {
         authorization: token
       }
     };
-    this.props.getReviews(requestOptions);
+
+    if (this.props.reviews.length === 0) {
+      this.props.getReviews(requestOptions);
+    }
   }
   render() {
     // if (window.localStorage.getItem("username") !== "the2bo5") {

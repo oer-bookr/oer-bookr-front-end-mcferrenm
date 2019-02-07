@@ -93,6 +93,6 @@ export const BookListItemWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    height: 100px;
+    height: 80px;
   }
 `;

@@ -17,7 +17,9 @@ class BookListView extends Component {
       }
     };
 
-    this.props.getBooks(requestOptions);
+    if (this.props.books.length === 0) {
+      this.props.getBooks(requestOptions);
+    }
   }
   render() {
     if (!localStorage.jwt) {
@@ -46,7 +48,9 @@ const mapStateToProps = state => ({
   searchInput: state.searchReducer.searchInput
 });
 
-export default withRouter(connect(
-  mapStateToProps,
-  { getBooks }
-)(BookListView));
+export default withRouter(
+  connect(
+    mapStateToProps,
+    { getBooks }
+  )(BookListView)
+);

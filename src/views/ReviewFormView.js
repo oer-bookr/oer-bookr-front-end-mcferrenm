@@ -19,6 +19,19 @@ class ReviewFormView extends Component {
     }
   };
 
+  componentDidMount() {
+    const token = localStorage.getItem("jwt");
+    const requestOptions = {
+      headers: {
+        authorization: token
+      }
+    };
+
+    if (this.props.reviews.length === 0) {
+      this.props.getReviews(requestOptions);
+    }
+  }
+
   handleChange = e => {
     e.persist();
     this.setState(prevState => ({
@@ -62,13 +75,11 @@ class ReviewFormView extends Component {
   };
 
   render() {
-    // if (!window.localStorage.getItem("jwt")) {
-    //   this.props.history.push("/login");
-    // }
     return (
       <ReviewForm
         {...this.props}
         books={this.props.books}
+        reviews={this.props.reviews}
         reviewInputs={this.state.reviewInputs}
         handleChange={this.handleChange}
         handleRating={this.handleRating}
