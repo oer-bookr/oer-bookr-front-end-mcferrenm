@@ -23,7 +23,9 @@ export const loginUser = loginInput => dispatch => {
     .then(res => {
       dispatch({ type: LOGIN_USER_SUCCESS });
       localStorage.setItem("jwt", res.data.token);
+      
     })
+    .then(() => this.props.history.push("/books/all"))
     .catch(err => {
       dispatch({ type: LOGIN_USER_FAILURE, payload: err });
     });

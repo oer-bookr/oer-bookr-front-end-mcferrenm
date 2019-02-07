@@ -137,7 +137,7 @@
   margin: 0 auto;
 } */
 
-.book-list-item-wrapper {
+/* .book-list-item-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -152,11 +152,11 @@
 
 .book-list-item-wrapper .item-body {
   padding: 10px;
-}
+} */
 
 /* Book Details */
 
-.book-details {
+/* .book-details {
   margin: 10px auto;
   width: 50%;
   display: flex;
@@ -194,7 +194,7 @@
 
 .book-details img {
   width: 300px;
-}
+} */
 
 /* Review Form */
 

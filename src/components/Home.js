@@ -1,7 +1,6 @@
 import React from "react";
 
 const Home = props => {
-  console.log(props);
   const handleNavToBooks = e => {
     e.preventDefault();
     props.history.push("/books/all");

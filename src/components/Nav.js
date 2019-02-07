@@ -10,15 +10,19 @@ const Nav = props => {
         <h1>OER Bookr</h1>
       </NavLink>
       <div className="nav-links">
+      <NavLink to="/books/all">
         <Button>
-          <NavLink to="/books/all">Books</NavLink>
+          Books
         </Button>
+        </NavLink>
         {props.isAuthenticated ? (
-          <Button>
-            <NavLink to="/login">Login</NavLink>
-          </Button>
-        ) : (
           <Button onClick={props.handleSignout}>Logout</Button>
+        ) : (
+          <NavLink to="/login">
+          <Button>
+           Login
+          </Button>
+          </NavLink>
         )}
       </div>
     </NavBar>
@@ -26,3 +30,4 @@ const Nav = props => {
 };
 
 export default Nav;
+

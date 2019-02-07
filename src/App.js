@@ -21,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route path="/" component={NavView} />
+
         <Route exact path="/login" component={LoginView} />
         <Route exact path="/addnewuser" component={NewUserFormView} />
         <Route exact path="/" component={HomeView} />
@@ -28,6 +29,7 @@ class App extends Component {
         <Route exact path="/book/:id" component={BookDetailsView} />
         <Route path="/book/:id/addreview" component={ReviewFormView} />
         <Route path="/book-form" component={BookFormView} />
+
         <Footer />
       </div>
     );

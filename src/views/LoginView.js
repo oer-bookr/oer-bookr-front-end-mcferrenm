@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom"
 
 import Login from "../components/Login";
 import { loginUser } from "../store/actions/loginActions";
@@ -26,7 +27,7 @@ class LoginView extends Component {
     e.preventDefault();
     this.props.loginUser(this.state.loginInput);
 
-    this.props.history.push("/books/all");
+    this.props.history.push("/books/all")
   };
 
   render() {
@@ -47,7 +48,7 @@ const mapStateToProps = state => ({
   isLoggedIn: state.loginReducer.isLoggedIn
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   { loginUser }
-)(LoginView);
+)(LoginView));

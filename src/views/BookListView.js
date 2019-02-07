@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Loader from "react-loader-spinner";
 
@@ -46,7 +46,7 @@ const mapStateToProps = state => ({
   searchInput: state.searchReducer.searchInput
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   { getBooks }
-)(BookListView);
+)(BookListView));

@@ -1,6 +1,7 @@
 import React from "react";
 
 import ReviewItem from "./ReviewItem";
+import { ReviewListContainer } from "../../styles/ReviewListStyles";
 
 const ReviewList = props => {
   const id = props.match.params.id;
@@ -9,12 +10,12 @@ const ReviewList = props => {
   );
 
   return (
-    <div className="review-list">
+    <ReviewListContainer>
       <h2>Reviews:</h2>
       {filteredReviews.map(review => (
         <ReviewItem review={review} key={review.reviewer} />
       ))}
-    </div>
+    </ReviewListContainer>
   );
 };
 
