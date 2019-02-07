@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const BASE_URL = "https://oer-bookr-api.herokuapp.com";
-const BASE_URL = `${process.env.REACT_APP_API_URL}/api/login`;
+const BASE_URL = `${process.env.REACT_APP_API_URL}`;
 
 export const GET_BOOKS_START = "GET_BOOKS_START";
 export const GET_BOOKS_SUCCESS = "GET_BOOKS_SUCCESS";
