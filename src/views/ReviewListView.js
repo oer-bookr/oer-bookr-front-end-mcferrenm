@@ -6,7 +6,13 @@ import { getReviews } from "../store/actions/reviewListActions";
 
 class ReviewListView extends Component {
   componentDidMount() {
-    this.props.getReviews();
+    const token = localStorage.getItem("jwt");
+    const requestOptions = {
+      headers: {
+        authorization: token
+      }
+    };
+    this.props.getReviews(requestOptions);
   }
   render() {
     // if (window.localStorage.getItem("username") !== "the2bo5") {

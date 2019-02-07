@@ -19,11 +19,11 @@ export const UPDATE_REVIEW_START = "UPDATE_REVIEW_START";
 export const UPDATE_REVIEW_SUCCESS = "UPDATE_REVIEW_SUCCESS";
 export const UPDATE_REVIEW_FAILURE = "UPDATE_REVIEW_FAILURE";
 
-export const getReviews = () => dispatch => {
+export const getReviews = requestOptions => dispatch => {
   dispatch({ type: GET_REVIEWS_START });
 
   axios
-    .get(`${BASE_URL}/reviews`)
+    .get(`${BASE_URL}/reviews`, requestOptions)
     // .then(res => console.log(res))
     .then(res => dispatch({ type: GET_REVIEWS_SUCCESS, payload: res.data }))
     .catch(err => dispatch({ type: GET_REVIEWS_FAILURE, payload: err }));

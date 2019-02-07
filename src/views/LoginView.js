@@ -23,6 +23,7 @@ class LoginView extends Component {
   };
 
   handleLogin = e => {
+    e.preventDefault();
     this.props.loginUser(this.state.loginInput);
 
     this.props.history.push("/books/all");
