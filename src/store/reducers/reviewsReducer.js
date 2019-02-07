@@ -1,4 +1,4 @@
-import { REVIEW_MOCK_DATA } from "../../REVIEW_MOCK_DATA";
+// import { REVIEW_MOCK_DATA } from "../../REVIEW_MOCK_DATA";
 
 import {
   GET_REVIEWS_START,
@@ -10,7 +10,7 @@ import {
 } from "../actions/reviewListActions";
 
 const initialState = {
-  reviews: REVIEW_MOCK_DATA,
+  reviews: [],
   isLoadingReviews: false,
   isAddingReview: false,
   error: ""
@@ -27,7 +27,7 @@ export const reviewsReducer = (state = initialState, action) => {
     case GET_REVIEWS_SUCCESS:
       return {
         ...state,
-        reviews: [...state.reviews, action.payload],
+        reviews: action.payload,
         isLoadingReviews: false
       };
     case GET_REVIEWS_FAILURE:
@@ -45,7 +45,7 @@ export const reviewsReducer = (state = initialState, action) => {
     case ADD_REVIEW_SUCCESS:
       return {
         ...state,
-        reviews: [...state.reviews, action.payload],
+        reviews: action.payload,
         isAddingReview: false
       };
     case ADD_REVIEW_FAILURE:

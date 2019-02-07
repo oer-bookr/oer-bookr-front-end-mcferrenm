@@ -14,7 +14,6 @@ export const SubNavContainer = styled.nav`
   align-items: baseline;
   padding: 20px;
   background: #fff;
-  margin-bottom: 25px;
 
   button {
     margin: 0;
@@ -29,7 +28,7 @@ export const SubNavContainer = styled.nav`
   }
 
   .sub-nav-links {
-    width: 33%;
+    width: 500px;
     min-width: 400px;
     display: flex;
     justify-content: space-evenly;
@@ -40,8 +39,7 @@ export const SubNavContainer = styled.nav`
   }
 
   .sub-nav-links a {
-    margin-right: 10px;
-    padding-right: 20px;
+    padding: 0 25px;
     border-right: 1px solid lightgrey;
   }
 

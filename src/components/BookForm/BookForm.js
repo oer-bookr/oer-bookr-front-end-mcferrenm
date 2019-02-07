@@ -1,8 +1,11 @@
 import React from "react";
 
+import { BookFormContainer } from "../../styles/BookFormStyles";
+import { Button } from "../../styles/reusables/Button";
+
 const BookForm = props => {
   return (
-    <div className="book-form">
+    <BookFormContainer>
       <div className="book-form-header">
         {props.isEditingBook ? <h1>Updating Book...</h1> : <h1>Add a Book</h1>}
       </div>
@@ -50,12 +53,12 @@ const BookForm = props => {
           onChange={props.handleChange}
         />
         {props.isEditingBook ? (
-          <button onClick={props.handleUpdateBook}>Update</button>
+          <Button onClick={props.handleUpdateBook}>Update</Button>
         ) : (
-          <button onClick={props.handleAddBook}>Add</button>
+          <Button onClick={props.handleAddBook}>Add</Button>
         )}
       </form>
-    </div>
+    </BookFormContainer>
   );
 };
 

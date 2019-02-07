@@ -16,6 +16,7 @@ export const BookDetailsContainer = styled.div`
     background: rgb(251, 251, 251);
   }
   .book-details-body {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgrey;
@@ -29,6 +30,7 @@ export const BookDetailsContainer = styled.div`
 
   img {
     width: 300px;
+    height: 400px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }

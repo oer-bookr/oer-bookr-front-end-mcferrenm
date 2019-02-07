@@ -6,7 +6,7 @@ const Footer = props => {
   return (
     <FooterContainer>
       <NavLink exact to="/">
-        <h1>OER Bookr</h1>
+        <h1>OER Bookr © 2019</h1>
       </NavLink>
     </FooterContainer>
   );

@@ -6,4 +6,8 @@ export const FooterContainer = styled.footer`
   align-items: center;
   padding: 200px 30px;
   background: #fff;
+
+  h1 {
+    font-size: 0.8rem;
+  }
 `;

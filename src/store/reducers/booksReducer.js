@@ -1,4 +1,4 @@
-import { bookData } from "../../MOCK_DATA";
+// import { bookData } from "../../MOCK_DATA";
 
 import {
   GET_BOOKS_START,
@@ -18,7 +18,7 @@ import {
 } from "../actions/bookListActions";
 
 const initialState = {
-  books: bookData,
+  books: [],
   isLoadingBooks: false,
   isAddingBook: false,
   isDeletingBook: false,
@@ -39,7 +39,7 @@ export const booksReducer = (state = initialState, action) => {
     case GET_BOOKS_SUCCESS:
       return {
         ...state,
-        books: [...state.books, action.payload],
+        books: action.payload,
         isLoadingBooks: false
       };
     case GET_BOOKS_FAILURE:
@@ -57,7 +57,7 @@ export const booksReducer = (state = initialState, action) => {
     case ADD_BOOK_SUCCESS:
       return {
         ...state,
-        books: [...state.books, action.payload],
+        books: action.payload,
         isAddingBook: false
       };
     case ADD_BOOK_FAILURE:
