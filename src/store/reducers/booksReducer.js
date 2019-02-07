@@ -57,7 +57,7 @@ export const booksReducer = (state = initialState, action) => {
     case ADD_BOOK_SUCCESS:
       return {
         ...state,
-        books: action.payload,
+        // books: action.payload,
         isAddingBook: false
       };
     case ADD_BOOK_FAILURE:

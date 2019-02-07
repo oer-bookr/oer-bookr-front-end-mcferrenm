@@ -45,7 +45,7 @@ export const reviewsReducer = (state = initialState, action) => {
     case ADD_REVIEW_SUCCESS:
       return {
         ...state,
-        reviews: action.payload,
+        // reviews: action.payload,
         isAddingReview: false
       };
     case ADD_REVIEW_FAILURE:

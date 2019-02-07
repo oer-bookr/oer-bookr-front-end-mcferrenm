@@ -22,10 +22,17 @@ export const UPDATE_BOOK_START = "UPDATE_BOOK_START";
 export const UPDATE_BOOK_SUCCESS = "UPDATE_BOOK_SUCCESS";
 export const UPDATE_BOOK_FAILURE = "UPDATE_BOOK_FAILURE";
 
-export const getBooks = reqOptions => dispatch => {
+const token = localStorage.getItem("jwt");
+const requestOptions = {
+  headers: {
+    authorization: token
+  }
+};
+
+export const getBooks = () => dispatch => {
   dispatch({ type: GET_BOOKS_START });
   axios
-    .get(`${BASE_URL}/books`, reqOptions)
+    .get(`${BASE_URL}/books`, requestOptions)
     .then(res => {
       dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
     })
@@ -41,7 +48,7 @@ export const addBook = newBook => dispatch => {
       dispatch({ type: ADD_BOOK_SUCCESS });
       dispatch({ type: GET_BOOKS_START });
       axios
-        .get(`${BASE_URL}/books`)
+        .get(`${BASE_URL}/books`, requestOptions)
         .then(res => {
           dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
         })
@@ -64,7 +71,7 @@ export const updateBook = updatedBook => dispatch => {
       dispatch({ type: EDIT_BOOK_SUCCESS });
       dispatch({ type: GET_BOOKS_START });
       axios
-        .get(`${BASE_URL}/books`)
+        .get(`${BASE_URL}/books`, requestOptions)
         .then(res => {
           dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
         })
@@ -82,7 +89,7 @@ export const deleteBook = id => dispatch => {
       dispatch({ type: DELETE_BOOK_SUCCESS, payload: res.data.id });
       dispatch({ type: GET_BOOKS_START });
       axios
-        .get(`${BASE_URL}/books`)
+        .get(`${BASE_URL}/books`, requestOptions)
         .then(res => {
           dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
         })

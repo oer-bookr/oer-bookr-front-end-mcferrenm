@@ -71,6 +71,8 @@ class BookFormView extends Component {
       ...this.state.bookInputs
     };
 
+    delete payload.id;
+
     this.props.addBook(payload);
 
     this.setState({

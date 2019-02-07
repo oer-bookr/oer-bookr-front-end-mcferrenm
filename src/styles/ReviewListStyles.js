@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ReviewListContainer = styled.div`
   .review-item {
     border-top: 1px solid lightgrey;
+
+    :first-of-type {
+      border-top: none;
+    }
     padding: 10px 0;
     .review-header {
       display: flex;
