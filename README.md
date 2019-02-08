@@ -1,28 +1,9 @@
-[Front End Architect](https://www.notion.so/c55704a6b05e4b268d865eb02dcf4c11)
+## **OER Bookr**
+[OER Bookr](https://determined-lamarr-e4cba2.netlify.com/)
 
-## **Web Application Development Role Description**
+## **Project Description**
 
-React JS has been your focus over the last 4 weeks. You will use those skills learned during the React Unit to build out a web application that consumes a CRUD API.
+For the last 4 weeks, I have been studying React and how to build a CRUD API. For this build week project, I worked with a team including UI developers, a Back End Engineer and a SCRUM Master. Our project is a simple app where users can log in to see a list of open source books and leave a review.
 
-## **The `Web Application Development` unit explored the following topics:**
-
-- Functional Components 1 - 2
-- Class Components 1-2
-- React Tooling
-- The React Life-cycle
-- React Composition Patterns
-- CSS in JS
-- React Router 1 - 2
-- HTTP/AJAX 1 - 2
-- Redux Fundamentals 1 - 2
-- Async Redux w/ Redux Thunk
-
-For your project this week, you will demonstrate proficiency by working with a group of students cross section to deliver a minimum viable product (MVP) over the course of the week.
-
-## **Your primary role as the Web Application Architect:**
-
-You will use your skills to be responsible for the Front End Architecture of this project. You will work directly with the UI Developer and the Back End Developer to ensure that all React components are wired up in proper fashion.
-
-## Grading Rubric Link:
-
-Use [this rubric](https://docs.google.com/spreadsheets/d/1dL5UfyiHJ2qxWWfot-FTOeU3KUvZaixAKvkJ0uLuhL8/edit?usp=sharing) to help guide your development processes
+## **Tooling:**
+Beyond React fundamentals, this app utilizes Redux, Redux Thunk / Logger Middleware, Axios, Router, Styled Components, and was built and deployed using Netlify.
