@@ -1,5 +1,5 @@
 ## **OER Bookr**
-[live: OER Bookr](https://determined-lamarr-e4cba2.netlify.com/)
+live: [OER Bookr](https://determined-lamarr-e4cba2.netlify.com/)
 
 log: max
 pass: pass
