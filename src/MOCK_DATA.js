@@ -7,7 +7,7 @@ export const bookData = [
     license:
       "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Comedy|Drama",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Joelle Rosenschein",
@@ -49,7 +49,7 @@ export const bookData = [
     license:
       "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Horror|Thriller",
+    subject: "History",
     reviews: [
       {
         reviewer: "Jon McCue",
@@ -90,7 +90,7 @@ export const bookData = [
     license:
       "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Cathryn McCole",
@@ -132,7 +132,7 @@ export const bookData = [
     license:
       "Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Comedy|Romance",
+    subject: "Comedy",
     reviews: [
       {
         reviewer: "Mercedes Salters",
@@ -162,7 +162,7 @@ export const bookData = [
     license:
       "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Yetty Maysor",
@@ -368,7 +368,7 @@ export const bookData = [
     license:
       "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Krissy Charman",
@@ -447,7 +447,7 @@ export const bookData = [
     license:
       "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Kinnie Tann",
@@ -489,7 +489,7 @@ export const bookData = [
     license:
       "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama|Horror|Thriller",
+    subject: "English",
     reviews: [
       {
         reviewer: "Dorri Alkin",
@@ -530,7 +530,7 @@ export const bookData = [
     license:
       "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Michel Cosley",
@@ -572,7 +572,7 @@ export const bookData = [
     license:
       "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Fantasy|Musical",
+    subject: "Fantasy",
     reviews: [
       {
         reviewer: "Delmar Atrill",
@@ -590,7 +590,7 @@ export const bookData = [
     license:
       "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Marius Ashbolt",
@@ -608,7 +608,7 @@ export const bookData = [
     license:
       "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Children|Drama|Fantasy|Mystery|Thriller",
+    subject: "Children|Science|Mystery|Thriller",
     reviews: [
       {
         reviewer: "Kristofer Grimm",
@@ -644,7 +644,7 @@ export const bookData = [
     license:
       "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Comedy|Drama|Romance",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Kaitlyn Buntain",
@@ -727,7 +727,7 @@ export const bookData = [
     license:
       "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Comedy|Drama|Horror|Thriller",
+    subject: "Math|History",
     reviews: [
       {
         reviewer: "Augustine Larmour",
@@ -788,7 +788,7 @@ export const bookData = [
     license:
       "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Wat Jurasek",
@@ -918,7 +918,7 @@ export const bookData = [
     license:
       "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Comedy|Crime|Drama|Thriller",
+    subject: "Comedy|Crime",
     reviews: [
       {
         reviewer: "Ode Croot",
@@ -984,7 +984,7 @@ export const bookData = [
     license:
       "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Comedy|Musical|Sci-Fi",
+    subject: "Comedy",
     reviews: [
       {
         reviewer: "Mireielle Pleass",
@@ -1014,7 +1014,7 @@ export const bookData = [
     license:
       "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Law Pley",
@@ -1080,7 +1080,7 @@ export const bookData = [
     license:
       "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama|Horror|Mystery",
+    subject: "Science|Horror|Mystery",
     reviews: [
       {
         reviewer: "Elisabetta Crosen",
@@ -1122,7 +1122,7 @@ export const bookData = [
     license:
       "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Comedy|Romance",
+    subject: "Comedy",
     reviews: [
       {
         reviewer: "Conn Picken",
@@ -1152,7 +1152,7 @@ export const bookData = [
     license:
       "Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama|Mystery|Romance",
+    subject: "Science|Mystery",
     reviews: [
       {
         reviewer: "Sibyl De L'Isle",
@@ -1241,7 +1241,7 @@ export const bookData = [
     license:
       "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Anatollo Klees",
@@ -1265,7 +1265,7 @@ export const bookData = [
     license:
       "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Action|Fantasy|Sci-Fi",
+    subject: "Action",
     reviews: [
       {
         reviewer: "Keri O'Carney",
@@ -1307,7 +1307,7 @@ export const bookData = [
     license:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Comedy|Drama|Romance",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Katti Bettis",
@@ -1331,7 +1331,7 @@ export const bookData = [
     license:
       "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Action|Drama|Thriller",
+    subject: "Action",
     reviews: [
       {
         reviewer: "Nahum Aizikovitz",
@@ -1349,7 +1349,7 @@ export const bookData = [
     license:
       "Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Action|Adventure|Children|Fantasy",
+    subject: "Action|Adventure|Children",
     reviews: [
       {
         reviewer: "Haven Steggles",
@@ -1372,7 +1372,7 @@ export const bookData = [
     license:
       "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Animation|Comedy|Fantasy",
+    subject: "Animation|Comedy",
     reviews: [
       {
         reviewer: "Natalee Taree",
@@ -1396,7 +1396,7 @@ export const bookData = [
     license:
       "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Action|Drama",
+    subject: "Action|Science",
     reviews: [
       {
         reviewer: "Essy Basten",
@@ -1414,7 +1414,7 @@ export const bookData = [
     license:
       "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Comedy|Drama|Romance",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Elysee Nunan",
@@ -1491,7 +1491,7 @@ export const bookData = [
     license:
       "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Hubey Graeber",
@@ -1545,7 +1545,7 @@ export const bookData = [
     license:
       "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Comedy|Drama|Romance",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Kippie Furman",
@@ -1791,7 +1791,7 @@ export const bookData = [
     license:
       "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Rakel Goldfinch",
@@ -1821,7 +1821,7 @@ export const bookData = [
     license:
       "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Larisa Ficken",
@@ -1869,7 +1869,7 @@ export const bookData = [
     license:
       "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Comedy|Drama",
+    subject: "Math",
     reviews: [
       {
         reviewer: "Gare Akett",
@@ -1887,7 +1887,7 @@ export const bookData = [
     license:
       "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Zeb Bosenworth",
@@ -1916,7 +1916,7 @@ export const bookData = [
     license:
       "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama|Thriller",
+    subject: "Science|Thriller",
     reviews: [
       {
         reviewer: "Channa Preddle",
@@ -1945,7 +1945,7 @@ export const bookData = [
     license:
       "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama|Mystery|Thriller",
+    subject: "Science|Mystery|Thriller",
     reviews: [
       {
         reviewer: "Lorne Malyj",
@@ -1981,7 +1981,7 @@ export const bookData = [
     license:
       "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Hashim Mylan",
@@ -2041,7 +2041,7 @@ export const bookData = [
     license:
       "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Action|Drama|Horror",
+    subject: "Action|Science|Horror",
     reviews: [
       {
         reviewer: "Brook Furby",
@@ -2095,7 +2095,7 @@ export const bookData = [
     license:
       "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Dinny Saville",
@@ -2113,7 +2113,7 @@ export const bookData = [
     license:
       "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Jeremy Sibbson",
@@ -2190,7 +2190,7 @@ export const bookData = [
     license:
       "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Comedy|Drama|Thriller",
+    subject: "Math|Thriller",
     reviews: [
       {
         reviewer: "Land Wohler",
@@ -2284,7 +2284,7 @@ export const bookData = [
     license:
       "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Corabel McElrath",
@@ -2308,7 +2308,7 @@ export const bookData = [
     license:
       "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama|Thriller",
+    subject: "Science|Thriller",
     reviews: [
       {
         reviewer: "Tadeas Flowers",
@@ -2344,7 +2344,7 @@ export const bookData = [
     license:
       "Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Fantasy|Sci-Fi",
+    subject: "Fantasy",
     reviews: [
       {
         reviewer: "Celestyn Huson",
@@ -2379,7 +2379,7 @@ export const bookData = [
     license:
       "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Roxane Bumphrey",
@@ -2421,7 +2421,7 @@ export const bookData = [
     license:
       "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Sanson Langsbury",
@@ -2463,7 +2463,7 @@ export const bookData = [
     license:
       "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Comedy|Documentary|Drama",
+    subject: "Comedy|Documentary|Science",
     reviews: [
       {
         reviewer: "Claudell Bedingfield",
@@ -2487,7 +2487,7 @@ export const bookData = [
     license:
       "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Comedy|Crime|Horror|Thriller",
+    subject: "Comedy|Crime|History",
     reviews: [
       {
         reviewer: "Lyman Quarterman",
@@ -2505,7 +2505,7 @@ export const bookData = [
     license:
       "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Laurens Madgett",
@@ -2534,7 +2534,7 @@ export const bookData = [
     license:
       "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Crime|Drama",
+    subject: "Crime|Science",
     reviews: [
       {
         reviewer: "Evangelina Kendal",
@@ -2629,7 +2629,7 @@ export const bookData = [
     license:
       "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Noelani Tredgold",
@@ -2669,7 +2669,7 @@ export const bookData = [
     license:
       "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama|War",
+    subject: "Science|War",
     reviews: [
       {
         reviewer: "Dicky Ditter",
@@ -2687,7 +2687,7 @@ export const bookData = [
     license:
       "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama|Film-Noir|War",
+    subject: "Science|Film-Noir|War",
     reviews: [
       {
         reviewer: "Kaitlin Kirke",
@@ -2723,7 +2723,7 @@ export const bookData = [
     license:
       "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
     image: "http://dummyimage.com/318x318.png/dddddd/000000",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Devlin Rase",
@@ -2758,7 +2758,7 @@ export const bookData = [
     license:
       "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Action|Sci-Fi|Thriller",
+    subject: "Action|Thriller",
     reviews: [
       {
         reviewer: "Livvyy Deware",
@@ -2824,7 +2824,7 @@ export const bookData = [
     license:
       "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama|Film-Noir|Thriller",
+    subject: "Science|Film-Noir|Thriller",
     reviews: [
       {
         reviewer: "Amil Limprecht",
@@ -2872,7 +2872,7 @@ export const bookData = [
     license:
       "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
     image: "http://dummyimage.com/318x318.png/cc0000/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Cobby O'Hallihane",
@@ -2890,7 +2890,7 @@ export const bookData = [
     license:
       "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Romance",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Emlynne Torpie",
@@ -2913,7 +2913,7 @@ export const bookData = [
     license:
       "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
     image: "http://dummyimage.com/318x318.png/ff4444/ffffff",
-    subject: "Drama|Mystery|Romance",
+    subject: "Science|Mystery",
     reviews: [
       {
         reviewer: "Noam Reeve",
@@ -2931,7 +2931,7 @@ export const bookData = [
     license:
       "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
     image: "http://dummyimage.com/318x318.png/5fa2dd/ffffff",
-    subject: "Drama",
+    subject: "Science",
     reviews: [
       {
         reviewer: "Marissa Bickell",

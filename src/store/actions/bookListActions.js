@@ -41,20 +41,21 @@ export const getBooks = () => dispatch => {
 
 export const addBook = newBook => dispatch => {
   dispatch({ type: ADD_BOOK_START });
-  axios
-    .post(`${BASE_URL}/books`, newBook)
-    // .then(res => console.log(res));
-    .then(res => {
-      dispatch({ type: ADD_BOOK_SUCCESS });
-      dispatch({ type: GET_BOOKS_START });
-      axios
-        .get(`${BASE_URL}/books`, requestOptions)
-        .then(res => {
-          dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
-        })
-        .catch(err => dispatch({ type: GET_BOOKS_FAILURE, payload: err }));
-    })
-    .catch(err => dispatch({ type: ADD_BOOK_FAILURE, payload: err }));
+  dispatch({ type: ADD_BOOK_SUCCESS, payload: newBook });
+  // axios
+  //   .post(`${BASE_URL}/books`, newBook)
+  //   // .then(res => console.log(res));
+  //   .then(res => {
+  //     dispatch({ type: ADD_BOOK_SUCCESS });
+  //     dispatch({ type: GET_BOOKS_START });
+  //     axios
+  //       .get(`${BASE_URL}/books`, requestOptions)
+  //       .then(res => {
+  //         dispatch({ type: GET_BOOKS_SUCCESS, payload: res.data });
+  //       })
+  //       .catch(err => dispatch({ type: GET_BOOKS_FAILURE, payload: err }));
+  //   })
+  //   .catch(err => dispatch({ type: ADD_BOOK_FAILURE, payload: err }));
 };
 
 export const editBook = id => dispatch => {

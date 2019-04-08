@@ -22,9 +22,9 @@ class BookListView extends Component {
     }
   }
   render() {
-    if (!localStorage.jwt) {
-      this.props.history.push("/login");
-    }
+    // if (!localStorage.jwt) {
+    //   this.props.history.push("/login");
+    // }
     return (
       <div>
         <Route path="/books/:subject" component={JumboSearchView} />
